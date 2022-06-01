@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'MyFont';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_Black_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont1';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_Black_Italic_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont2';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_Bold_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont3';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_Bold_Italic_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont4';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_ExtraLight_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont5';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_ExtraLight_Italic_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont6';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_Light_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont7';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_Light_Italic_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont8';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_Medium_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont9';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_Medium_Italic_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont10';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_Regular_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont11';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_Regular_Italic_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont12';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_Semi_Bold_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont13';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_Semi_Bold_Italic_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont14';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_UltraLight_Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont15';
+    src: local('MyFont'), url(./sofia-pro-cdnfonts/Sofia_Pro_UltraLight_Italic_Az.otf) format('woff');
+}
+
+
+
+
+
+
