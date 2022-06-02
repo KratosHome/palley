@@ -1,7 +1,7 @@
 import {createGlobalStyle} from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-  
+
   *,
   a,
   ul,
@@ -16,4 +16,9 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+  }
 `

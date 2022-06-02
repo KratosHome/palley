@@ -9,6 +9,7 @@ export const HeaderStyles = styled.header`
   background-color: white;
   width: 100%;
   position: sticky;
+  z-index: 2;
 
   .logo {
     height: 40px;
