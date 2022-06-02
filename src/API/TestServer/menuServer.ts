@@ -142,19 +142,19 @@ export const menuServer = [
         ]
     },
     {
-        "id": 1,
+        "id": 27,
         "name": "about ass",
         "path": "/about_ass",
         "CubMenu": []
     },
     {
-        "id": 1,
+        "id": 28,
         "name": "blog",
         "path": "/blog",
         "CubMenu": []
     },
     {
-        "id": 1,
+        "id": 29,
         "name": "faqs",
         "path": "/faqs",
         "CubMenu": []

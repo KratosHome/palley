@@ -2,6 +2,7 @@ import {MenuStyle} from "./MenuStyle"
 import {menuServer} from "../../../API/TestServer/menuServer";
 import personal_area from "../../../img/icons/personal_area.png";
 import {useState} from "react";
+import {Link} from "react-router-dom";
 
 export const HeaderMenu = () => {
     const [menuActive, setMenuActiv] = useState(false)
@@ -23,33 +24,34 @@ export const HeaderMenu = () => {
                             <div>Menu</div>
                         </div>
                         <div className="menuCabinet">
-                            <a className="menuCabinetLink" href="/personal_area">
+                            <Link className="menuCabinetLink" to="/cabinet">
                                 <img src={personal_area} alt="personal_area"/>
                                 <div className="menuOpenCabinet">login</div>
-                            </a>
+                            </Link>
                         </div>
                         {menuServer.map(item =>
-                            <li>
-                                <a>{item.name}</a>
+                            <li key={item.id}>
+                                <Link to={item.path}>{item.name}</Link>
                                 <ul className="cubMenu">
                                     {item.CubMenu.map(item =>
-                                        <li>
-                                            <a>{item.name}</a>
-                                            {item.secondMenu.map(item =>
-                                                <ul className="secondMenu">
-                                                    <li>
-                                                        <a>{item.name}</a>
+                                        <li key={item.id}>
+                                            <Link to={item.path}>{item.name}</Link>
+                                            <ul className="secondMenu">
+                                                {item.secondMenu.map(item =>
+                                                    <li key={item.id}>
+                                                        <Link to={item.path}>{item.name}</Link>
                                                     </li>
-                                                </ul>
-                                            )}
+                                                )}
+                                            </ul>
                                         </li>
                                     )}
                                 </ul>
                             </li>
                         )}
                     </ul>
-
                 </nav>
+                <div className={menuActive ? "menuBlureOpen" : "menuBlureClose"}
+                     onClick={() => setMenuActiv(!menuActive)}></div>
             </MenuStyle>
         </>
     )

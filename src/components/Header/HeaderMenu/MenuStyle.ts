@@ -7,6 +7,7 @@ export const MenuStyle = styled.div`
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+    background-color: white;
   }
 
   .menu a {
@@ -95,6 +96,7 @@ export const MenuStyle = styled.div`
     letter-spacing: unset;
   }
 
+  .menuBlureOpen,
   .menuMobClose,
   .menuCabinet,
   .menuClose {
@@ -105,6 +107,7 @@ export const MenuStyle = styled.div`
   @media (max-width: 768px) {
 
     .menu {
+      position: absolute;
       flex-direction: column;
       overflow: auto;
       border: 1px solid rgba(0, 0, 0, 0.2);
@@ -113,6 +116,7 @@ export const MenuStyle = styled.div`
       width: 280px;
       height: 100vh;
       justify-content: flex-start;
+      z-index: 2;
     }
 
     .menu > li {
@@ -244,7 +248,7 @@ export const MenuStyle = styled.div`
       margin-top: 10px;
       margin-left: 15px;
     }
-    
+
     .animateMenuOpen {
       transform: rotateY(1deg);
       transition: 500ms;
@@ -254,94 +258,21 @@ export const MenuStyle = styled.div`
       transform: translate(-300px);
       transition: 500ms ease-in-out;
     }
+
+    .menuBlureOpen {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+
+    .menuBlureClose {
+      display: none;
+    }
   }
 
-  /*
- 
-  
-    @media (max-width: 768px) {
-
-  
-
-  
-      .menu_mob_open_name div:nth-child(4) {
-        padding-left: 45%;
-        margin-top: -15px;
-        text-transform: uppercase;
-      }
-  
-
-   
-  
-     
-  
-      .open_menu_personal_area {
-        margin-top: 15px;
-        display: block;
-        color: black;
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-  
-      .menu_personal_area_menu {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        z-index: 10;
-        border: 1px solid black;
-        width: 160px;
-        height: 56px;
-      }
-  
-      .menu_personal_area_menu img {
-        width: 25px;
-        height: 25px;
-        margin: 0 10px 0 0;
-      }
-  
-      .menu_personal_area_menu a {
-        text-decoration: none;
-      }
-  
-      .menu_personal_area_menu img {
-        margin-top: 10px;
-        margin-left: 30px;
-      }
-  
-      .personal_area_link {
-        display: flex;
-      }
-  
-      .animation_menu_open {
-        transform: rotateY(0deg);
-        transition: 500ms;
-      }
-  
-      .menu li {
-        width: 80%;
-        padding: 3%;
-        border: 1px solid #e8caca;
-      }
-  
-      .menu a {
-        padding: 10px 100px 10px 10px;
-  
-        white-space: nowrap;
-      }
-  
-      .product_cubmenu {
-        display: none;
-        position: absolute;
-      }
-  
-      .menu a:hover:after {
-        transform: scale(0);
-      }
-  
-      .blur {
-        filter: blur(15px);
-      }
-    }
-  */
 `
