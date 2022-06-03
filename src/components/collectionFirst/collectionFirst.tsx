@@ -1,15 +1,17 @@
 import {CollectionFirstStyle} from "./CollectionFirstStyle";
-import {collectionFirstServer} from "../../API/TestServer/collectionFirstServer";
 import {Swiper, SwiperSlide} from "swiper/react";
-import { Pagination, Autoplay, Navigation} from "swiper";
+import {Pagination, Autoplay, Navigation} from "swiper";
 import {useWindowSize} from "../../hooks/useWindowSize";
+import {Link} from "react-router-dom";
+import {CollectionFirstType} from "./CollectionFirstType";
 
-export const CollectionFirst = () => {
-
+export const CollectionFirst: React.FC<CollectionFirstType> = ({
+                                                                   collection
+                                                               }) => {
     const [width] = useWindowSize();
 
     function counInstagramSlider() {
-        let  responsive = 6
+        let responsive = 6
         if (+width <= 640) {
             responsive = 1
         } else if (+width <= 989) {
@@ -25,7 +27,6 @@ export const CollectionFirst = () => {
         }
         return responsive;
     }
-
 
     return (
         <CollectionFirstStyle>
@@ -46,11 +47,15 @@ export const CollectionFirst = () => {
                 modules={[Pagination, Navigation, Autoplay]}
                 className="mySwiper1"
             >
-                {collectionFirstServer.map(item => (
+                {collection.map((item: any) => (
                     <SwiperSlide key={item.url}>
-                        <div className="CollectionFirst">
-                            <img src={item.url} alt={item.alt}/>
-                        </div>
+                        <Link to={item.path}>
+                            <div className="CollectionFirst">
+                                <img src={item.url} alt={item.alt}/>
+                            </div>
+                            <div className="CollectionFirstName">{item.name}</div>
+                            <div className="CollectionFirstText">{item.text}</div>
+                        </Link>
                     </SwiperSlide>
                 ))}
             </Swiper>

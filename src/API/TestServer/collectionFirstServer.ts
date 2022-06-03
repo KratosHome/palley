@@ -5,8 +5,8 @@ import img4 from "../../img/collectionFirst/collection1.4.jpg";
 
 
 export const collectionFirstServer = [
-    {url: img1, path: "/product", alt: "product"},
-    {url: img2, path: "/product", alt: "product"},
-    {url: img3, path: "/product", alt: "product"},
-    {url: img4, path: "/product", alt: "product"},
+    {url: img1, path: "/product", alt: "product", name: "save 35%", text: "Speaker"},
+    {url: img2, path: "/product", alt: "product", name: "New arrival", text: "Headphone"},
+    {url: img3, path: "/product", alt: "product", name: "FLASH SALE", text: "Wireless Charging"},
+    {url: img4, path: "/product", alt: "product", name: "FEATURE", text: "Handlebar"},
 ];
