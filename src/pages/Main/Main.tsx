@@ -5,6 +5,7 @@ import {bestSelerServer} from "../../API/TestServer/bestSelerServer";
 import {collectionFirstServer} from "../../API/TestServer/collectionFirstServer";
 import {InfoBlokMain} from "../../components/InfoBlokMain/InfoBlokMain";
 import imgInfoBlock from "../../img/baner/product_page2.jpg"
+import {TestimonialsHome} from "../../components/TestimonialsHome/TestimonialsHome";
 
 export const Main = () => {
     return (
@@ -24,6 +25,7 @@ export const Main = () => {
                 contentText={"Forsake bulky cases without compromising protectiveness"}
                 buttonText={"show now"}
             />
+            <TestimonialsHome/>
         </>
     )
 };

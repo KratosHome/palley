@@ -15,21 +15,26 @@ export const MenuStyle = styled.div`
     color: black;
     font-weight: 600;
     text-transform: uppercase;
-    padding-bottom: 55px;
+    padding-bottom: 20px;
     margin-right: 5px;
     white-space: nowrap;
+  }
+
+  .cubMenu a {
+    padding-bottom: 60px;
   }
 
   .menu a:hover {
     transition: 300ms;
     color: rgba(69, 171, 245, 1);
     cursor: pointer;
+
   }
 
   .menu > li > a:after,
   .cubMenu > li > a:after {
     position: absolute;
-    margin-bottom: 45px;
+    margin-bottom: 10px;
     content: "";
     height: 1px;
     width: 100%;
@@ -37,17 +42,30 @@ export const MenuStyle = styled.div`
     left: 0;
     bottom: 0;
     transform: scale(0);
-    transition: 500ms ease-in-out;
     transform-origin: left;
-    z-index: 101;
+    z-index: 1;
+    visibility: hidden;
+  }
+
+  .menu > li > a:after {
+    transition: 500ms ease-out;
+  }
+
+  .menu > li:hover .cubMenu > li > a:after {
+    visibility: visible;
+    transition: 500ms ease-out;
+  }
+
+  .cubMenu > li > a:after {
+    margin-bottom: 50px;
   }
 
   .menu a:hover:after {
+    visibility: visible;
     transform: scale(1);
   }
 
   .cubMenu {
-    margin-top: 10px;
     display: flex;
     position: absolute;
     justify-content: space-around;
@@ -55,20 +73,35 @@ export const MenuStyle = styled.div`
     right: 0;
     background-color: white;
     width: 100%;
-    transform: scale(0);
-    transition: 500ms ease-in-out;
-    transform-origin: bottom;
+    visibility: hidden;
+    opacity: 0;
+    top: 65px;
+    height: max-content;
+    transition: all 500ms;
+  }
+
+  .cubMenu > li {
+    margin-top: 30px;
   }
 
   .menu > li:hover .cubMenu {
-    transition: 500ms;
-    transform: scale(1);
-    z-index: 5;
+    visibility: visible;
+    opacity: 1;
+    transition: 500ms ease-in-out;
+
   }
 
-  .cubMenu {
-    top: 65px;
-    height: max-content;
+  @keyframes test {
+    0% {
+      opacity: 0.5;
+      transform: rotateX(50deg);
+    }
+    50% {
+      animation-timing-function: ease-in-out;
+    }
+    100% {
+      animation-timing-function: ease-in-out;
+    }
   }
 
   .cubMenu > li > a {
@@ -120,7 +153,7 @@ export const MenuStyle = styled.div`
     }
 
     .menu > li {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       width: 100%;
       height: 50px;
     }

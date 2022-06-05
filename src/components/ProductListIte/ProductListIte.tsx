@@ -5,8 +5,8 @@ import search from "./../../img/icons/search.png";
 import {ProductListIteType} from "./productListItemType";
 
 
-
 export const ProductListIte: React.FC<ProductListIteType> = ({id, name, prise, newPrise, img}) => {
+
 
     return (
         <ProductListIteStyle>
@@ -14,7 +14,7 @@ export const ProductListIte: React.FC<ProductListIteType> = ({id, name, prise, n
                 <img src={img} alt={name}/>
                 <div className="ProductListIte">{name}</div>
                 <div className="ProductListItePrise">
-                    {prise ?  <div className="ProductListItePriseOldPrise">${prise}</div>: null}
+                    {prise ? <div className="ProductListItePriseOldPrise">${prise}</div> : null}
                     <div>${newPrise}</div>
                 </div>
                 <div className="ProductListIteHover">

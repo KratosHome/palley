@@ -4,39 +4,39 @@ export const CollectionFirstStyle = styled.div`
   margin-top: -5px;
   padding-top: 40px;
   background-color: #eaedf1;
-  height: 375px;
-
-  
-  .swiper {
-    z-index: 1;
-  }
+  height: 380px;
 
   .CollectionFirst {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    min-width: 220px;
     max-width: 300px;
-    min-height: 220px;
     max-height: 300px;
-    background-color: white;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .CollectionFirst img {
-    min-width: 220px;
-    max-width: 280px;
-    min-height: 220px;
-    max-height: 280px;
+  .CollectionFirst:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 10px solid white;
+    z-index: 1;
+    min-width: 310px;
+    min-height: 250px;
   }
 
-  .swiper-pagination {
-    position: relative;
-    display: block;
-    margin-top: 25px;
+  .CollectionFirst img {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 500ms;
   }
-  .CollectionFirstName{
+
+  .CollectionFirst:hover.CollectionFirst img {
+    transform: scaleY(1.1);
+    transition: all 500ms;
+  }
+  
+  .CollectionFirstName {
     font-family: SofiaPro;
     font-size: 1.5em;
     font-weight: 500;
@@ -46,10 +46,17 @@ export const CollectionFirstStyle = styled.div`
     margin-bottom: 5px;
     margin-top: 10px;
   }
-  .CollectionFirstText{
+
+  .CollectionFirstText {
     color: #666666;
     font-family: SofiaPro;
     font-weight: 500;
     text-align: center;
+  }
+
+  .swiper-pagination {
+    position: relative;
+    display: block;
+    margin-top: 25px;
   }
 `

@@ -5,12 +5,14 @@ export const BanerMainContentStyle = styled.div`
   width: 350px;
   height: 180px;
   background-color: white;
-  top: 30%;
-  left: 37%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
   padding-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
   .BanerMainContentH1:after {
     display: block;
@@ -70,5 +72,6 @@ export const BanerMainContentStyle = styled.div`
     top: 20%;
     width: 100%;
     left: 0%;
+    transform:translate(0%, 0%);
   }
 `
