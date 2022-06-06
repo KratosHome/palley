@@ -6,11 +6,13 @@ export const CollectionFirstStyle = styled.div`
   background-color: #eaedf1;
   height: 380px;
 
+
   .CollectionFirst {
     max-width: 300px;
     max-height: 300px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
   }
 
   .CollectionFirst:before {
@@ -32,7 +34,7 @@ export const CollectionFirstStyle = styled.div`
   }
 
   .CollectionFirst:hover.CollectionFirst img {
-    transform: scaleY(1.1);
+    transform: scale(1.1);
     transition: all 500ms;
   }
   

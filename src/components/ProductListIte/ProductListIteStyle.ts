@@ -1,13 +1,33 @@
 import styled from "styled-components";
 
 export const ProductListIteStyle = styled.div`
+  overflow: hidden;
+  font-size: 0em;
+  
+  figure {
+    position: relative;
+    background: #e12c43;
+    transform: rotate(45deg);
+    left: 12.5em;
+    top: -16.5em;
+    padding: 0.2em 0.5em 0.2em 0.1em ;
+    width: 7em;
+  }
 
-  text-align: center;
+  figcaption {
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+
   img {
     width: 100%;
     max-width: 400px;
     height: 17em;
   }
+
   .ProductListIte {
     margin-top: 10px;
     color: #111;
@@ -36,18 +56,17 @@ export const ProductListIteStyle = styled.div`
 
   .ProductListIteHover {
     position: absolute;
-    margin-top: -150px;
+    margin-top: -180px;
     display: flex;
     align-items: center;
-  }
-  .ProductListIteHover {
     opacity: 0;
     transform: rotateX(150deg);
     transform-origin: bottom;
     transition: 500ms;
   }
-  
-    :hover .ProductListIteHover {
+
+
+  :hover .ProductListIteHover {
     opacity: 1;
     transform: rotateY(0deg);
   }
@@ -66,12 +85,14 @@ export const ProductListIteStyle = styled.div`
     transition: 500ms;
     font-size: 16px;
   }
+
   .ProductListIteHoverSelectOprions:hover {
     background-color: rgb(111, 177, 221);
     color: white;
     cursor: pointer;
     transition: 500ms;
   }
+
   .ProductListIteHoverSelectAddLikes,
   .ProductListIteHoverSelectQuickview {
     margin-right: 35px;
@@ -94,19 +115,28 @@ export const ProductListIteStyle = styled.div`
     cursor: pointer;
     transition: 500ms;
   }
+
   .ProductListIteHoverSelectAddLikes img,
   .ProductListIteHoverSelectQuickview img {
     width: 15px;
     height: 15px;
   }
-  
-  
+
+
   @media (max-width: 768px) {
     margin: 5px;
-    .ProductListIteHover{
+
+    figure {
+      left: 7.5em;
+      top: -11.5em;
+    }
+    
+    
+    .ProductListIteHover {
       display: none;
     }
-    img{
+
+    img {
       height: 12em;
     }
   }

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const BestSelerStyles = styled.div`
   text-align: center;
   margin-top: 20px;
-  font-family: MyFont1;
   font-weight: 500;
 
   .BestSelerContainer {
@@ -11,14 +10,16 @@ export const BestSelerStyles = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .BestSelerH3{
+
+  .BestSelerH3 {
     font-size: 2.4em;
     line-height: 1.2;
     color: #111111;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
-  .BestSelerText{
+
+  .BestSelerText {
     color: #666666;
     font-size: 1.1em;
     color: #666;

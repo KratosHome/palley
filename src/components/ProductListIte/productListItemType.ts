@@ -2,6 +2,6 @@ export type ProductListIteType = {
     id: number,
     name: string,
     prise: number  | null,
-    newPrise: number,
+    newPrise: number  | null,
     img: string;
 }

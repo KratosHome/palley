@@ -2,8 +2,8 @@ export const bestSelerServer = [
     {
         "id": 1,
         "name": "ChargeWorx Folding",
-        "prise": 50,
-        "newPrise": 15,
+        "prise": 70,
+        "newPrise": 50,
         "img": "/img/product/ChargeWorx_Folding.jpg",
     },
     {
@@ -17,14 +17,14 @@ export const bestSelerServer = [
         "id": 3,
         "name": "HDMI Multiport Adapter",
         "prise": 20,
-        "newPrise": 25,
+        "newPrise": 12,
         "img": "/img/product/HDMI_Multiport_Adapter.jpg",
     },
     {
         "id": 4,
         "name": "Mighty Mini 130 30W",
         "prise": 30,
-        "newPrise": 55,
+        "newPrise": 22,
         "img": "/img/product/Might_Mini_130_30W.jpg",
     },
     {
@@ -45,7 +45,7 @@ export const bestSelerServer = [
     {
         "id": 7,
         "name": "Thin Case For IPhone",
-        "prise": 90,
+        "prise": 75,
         "newPrise": 65,
         "img": "/img/product/Thin_Case_For_IPhone.jpg",
     },
