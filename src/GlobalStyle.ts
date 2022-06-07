@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: MyFont8;
-    font-size: calc((90vw - 470px) / (1980 - 470) * (16 - 10) + 14px);
+    font-size: calc((90vw - 470px) / (3980 - 470) * (16 - 10) + 14px);
     text-decoration: none;
     list-style: none;
   }
@@ -21,4 +21,10 @@ export const GlobalStyle = createGlobalStyle`
     text-transform: uppercase;
     text-align: center;
   }
+  .containerMain{
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 `

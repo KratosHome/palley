@@ -1,16 +1,16 @@
 import {CollectionFirstStyle} from "./CollectionFirstStyle";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination, Autoplay, Navigation} from "swiper";
-import {useWindowSize} from "../../hooks/useWindowSize";
+import {useWindowSize} from "../../../hooks/useWindowSize";
 import {Link} from "react-router-dom";
 import {CollectionFirstType} from "./CollectionFirstType";
+
 
 export const CollectionFirst: React.FC<CollectionFirstType> = ({
                                                                    collection
                                                                }) => {
     const [width] = useWindowSize();
-
-    function counInstagramSlider() {
+     function quantityImg(){
         let responsive = 6
         if (+width <= 640) {
             responsive = 1
@@ -31,7 +31,7 @@ export const CollectionFirst: React.FC<CollectionFirstType> = ({
     return (
         <CollectionFirstStyle>
             <Swiper
-                slidesPerView={counInstagramSlider()}
+                slidesPerView={quantityImg()}
                 spaceBetween={20}
                 slidesPerGroup={1}
                 autoplay={{

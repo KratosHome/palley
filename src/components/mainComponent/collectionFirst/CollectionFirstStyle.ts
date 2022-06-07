@@ -56,9 +56,10 @@ export const CollectionFirstStyle = styled.div`
     text-align: center;
   }
 
-  .swiper-pagination {
-    position: relative;
-    display: block;
-    margin-top: 25px;
+
+  @media(min-width: 2060px){
+    .swiper-pagination {
+      margin-top: 0px;
+    }
   }
 `

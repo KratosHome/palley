@@ -1,5 +1,5 @@
 import {BestSelerStyles} from "./BestSelerStyles";
-import {ProductListIte} from "../ProductListIte/ProductListIte";
+import {ProductListIte} from "../../ProductListIte/ProductListIte";
 import {BestSelerType} from "./BestSelerType";
 
 

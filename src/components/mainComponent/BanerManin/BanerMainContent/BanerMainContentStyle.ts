@@ -44,7 +44,7 @@ export const BanerMainContentStyle = styled.div`
 
   a {
     position: absolute;
-    margin-top: 8em;
+    margin-top: 130px;
     font-family: MuFony1;
     height: 50px;
     width: 100%;

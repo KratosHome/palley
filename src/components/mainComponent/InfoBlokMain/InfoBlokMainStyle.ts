@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const InfoBlokMainStyle = styled.div`
-
   display: flex;
   justify-content: center;
 
   .InfoBlokMainImg {
     max-height: 600px;
-    min-height: 300px;
+    min-height: 500px;
     width: 100%;
   }
 
@@ -16,10 +15,10 @@ export const InfoBlokMainStyle = styled.div`
     flex-direction: column;
     align-items: center;
     position: absolute;
-    margin-top: 12%;
+    margin-top: 10em;
     padding-top: 30px;
     background-color: white;
-    width: 40%;
+    width: 50em;
     height: 230px;
   }
 
@@ -47,32 +46,32 @@ export const InfoBlokMainStyle = styled.div`
     transition: 500ms;
   }
 
-  @media (max-width: 1491px) {
-    .InfoBlokMainContainer {
-      width: 50%;
+  .InfoBlokMainButton:hover {
+    background-color: ${props => props.theme.colors.backgroundButton};
+    cursor: pointer;
+  }
+
+
+  @media (max-width: 768px) {
+    .InfoBlokMainImg {
+      min-height: 350px;
     }
 
-    @media (max-width: 908px) {
-      .InfoBlokMainContainer {
-        width: 60%;
-      }
+    .InfoBlokMainContainer {
+      margin-top: 4em;
+      width: 30em;
+    }
 
-      @media (max-width: 768px) {
-
-        .InfoBlokMainContainer {
-          margin-top: 7%;
-        }
-
-        .InfoBlokMain_h3 {
-          font-size: 1.9em;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .InfoBlokMainContainer {
-          width: 80%;
-        }
-      }
+    .InfoBlokMain_h3 {
+      font-size: 1.9em;
     }
   }
+
+  @media (max-width: 468px) {
+    .InfoBlokMainContainer {
+      width: 20em;
+    }
+  }
+
+
 `

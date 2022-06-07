@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const HeaderStyles = styled.header`
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   top: 0;
   padding: 25px 0 0 0;
-  margin: 0;
   background-color: white;
   width: 100%;
   position: sticky;
