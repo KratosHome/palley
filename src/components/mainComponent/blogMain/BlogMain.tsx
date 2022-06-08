@@ -1,9 +1,24 @@
-import {BloagMainStyle} from "./BlogMainSryle";
+import {BlogMainStyle} from "./BlogMainSryle";
+import {BlogListItem} from "../../blogListItem/BlogListItem";
+import {blogMainServer} from "../../../API/TestServer/blogMainServer";
 
-export const BloagMain: React.FC<{}> = () => {
+export const BloagMain = () => {
+
     return (
-        <BloagMainStyle>
-            text
-        </BloagMainStyle>
+        <BlogMainStyle>
+            <h3>
+                OUR BLOG
+            </h3>
+            {blogMainServer.map(item =>
+                <BlogListItem
+                    key={item.id}
+                    id={item.id}
+                    title={item.title}
+                    content={item.content}
+                    img={item.img}
+                    revers={item.revers}
+                />
+            )}
+        </BlogMainStyle>
     )
 };

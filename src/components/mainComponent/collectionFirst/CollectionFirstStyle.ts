@@ -31,15 +31,16 @@ export const CollectionFirstStyle = styled.div`
     height: 100%;
     transform: scale(1);
     transition: 500ms;
+    margin-bottom: 10px;
   }
 
   .CollectionFirst:hover.CollectionFirst img {
     transform: scale(1.1);
     transition: all 500ms;
   }
-  
+
   .CollectionFirstName {
-    font-family: SofiaPro;
+    font-family: MyFont8;
     font-size: 1.5em;
     font-weight: 500;
     text-transform: uppercase;
@@ -51,15 +52,14 @@ export const CollectionFirstStyle = styled.div`
 
   .CollectionFirstText {
     color: #666666;
-    font-family: SofiaPro;
+    font-family: MyFont8;
     font-weight: 500;
     text-align: center;
   }
 
-
-  @media(min-width: 2060px){
-    .swiper-pagination {
-      margin-top: 0px;
-    }
+  .swiper-pagination {
+    display: none;
   }
+
+
 `

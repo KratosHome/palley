@@ -4,7 +4,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination, Autoplay, Navigation} from "swiper";
 import Rating from '@mui/material/Rating';
 
-export const TestimonialsHome: React.FC<{}> = () => {
+export const TestimonialsHome = () => {
     return (
         <TestimonialsHomeStyle>
             <h3>TESTIMONIALS</h3>
@@ -27,7 +27,7 @@ export const TestimonialsHome: React.FC<{}> = () => {
                     className="mySwiper1"
                 >
                     {testimonialsHomeServer.map((item: any) => (
-                        <SwiperSlide key={item.url}>
+                        <SwiperSlide key={item.name}>
                             <div className="testimonialsItemContainer">
                                 <div className="testimonialsItemText">{item.text}</div>
                                 <Rating name="size-medium" defaultValue={item.grade} readOnly/>

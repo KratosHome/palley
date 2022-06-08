@@ -21,6 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     text-transform: uppercase;
     text-align: center;
   }
+ 
   .containerMain{
     max-width: 2000px;
     margin-left: auto;
