@@ -9,7 +9,7 @@ export const InfoBlokMain: React.FC<InfoBlokMainType> = ({
                                                          }) => {
     return (
         <InfoBlokMainStyle>
-            <img className="InfoBlokMainImg" src={img}/>
+            <img className="InfoBlokMainImg" src={img} alt={h3Text}/>
             <div className="InfoBlokMainContainer">
                 <h3 className="InfoBlokMain_h3">{h3Text}</h3>
                 <div className="InfoBlokMainText">
