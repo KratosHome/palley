@@ -2,16 +2,16 @@ import styled from "styled-components";
 
 export const ProductListIteStyle = styled.div`
   overflow: hidden;
-  font-size: 0em;
+  font-size: 0;
   position: relative;
 
   figure {
     position: relative;
     background: #e12c43;
     transform: rotate(45deg);
-    left: 12.5em;
-    top: -16.5em;
-    padding: 0.2em 0.5em 0.2em 0.1em;
+    left: 15.5em;
+    top: -19.5em;
+    padding: 0.3em 0.5em 0.2em 0.1em;
     width: 7em;
   }
 
@@ -25,8 +25,7 @@ export const ProductListIteStyle = styled.div`
 
   img {
     width: 100%;
-    max-width: 400px;
-    height: 17em;
+    height: 20em;
   }
 
   .ProductListIte {
@@ -57,9 +56,7 @@ export const ProductListIteStyle = styled.div`
 
   .ProductListIteHover {
     position: absolute;
-    margin-top: -180px;
-
-
+    margin-top: -210px;
     display: flex;
     opacity: 0;
     transform-origin: bottom;
@@ -79,7 +76,6 @@ export const ProductListIteStyle = styled.div`
     align-items: center;
     justify-content: center;
     background-color: white;
-
     width: 40px;
     height: 40px;
     clip-path: circle(50% at center center);
@@ -88,13 +84,7 @@ export const ProductListIteStyle = styled.div`
     font-size: 13px;
   }
 
-  .
-  ProductListIteHoverSelectOprions:hover {
-    background-color: rgb(111, 177, 221);
-    color: white;
-    cursor: pointer;
-    transition: 500ms;
-  }
+  
 
   .ProductListIteHoverSelectQuickview {
     margin-left: 25px;
@@ -115,9 +105,10 @@ export const ProductListIteStyle = styled.div`
     font-size: 16px;
   }
 
+  .ProductListIteHoverSelectOprions:hover,
   .ProductListIteHoverSelectAddLikes:hover,
   .ProductListIteHoverSelectQuickview:hover {
-    background-color: rgb(111, 177, 221);
+    background-color: ${props => props.theme.colors.backgroundButton};
     color: white;
     cursor: pointer;
     transition: 500ms;
@@ -134,8 +125,8 @@ export const ProductListIteStyle = styled.div`
     margin: 5px;
 
     figure {
-      left: 7.5em;
-      top: -11.5em;
+      left: 10.5em;
+      top: -14.5em;
     }
 
 
@@ -144,7 +135,7 @@ export const ProductListIteStyle = styled.div`
     }
 
     img {
-      height: 12em;
+      height: 15em;
     }
   }
 `

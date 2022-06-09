@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {themeStyle} from "../../themaStyle";
 
 
 interface Props {
@@ -25,7 +24,7 @@ export const BloaListItemStyle = styled.div<Props>`
     min-height: 280px;
     max-height: 450px;
     width: 100%;
-    padding: 0px 30px 30px 30px;
+    padding: 0 30px 30px 30px;
     grid-row-start: ${props => props.revers ? '1' : ''};
   }
 
@@ -41,9 +40,14 @@ export const BloaListItemStyle = styled.div<Props>`
 
   @media ${props => props.theme.media.phone} {
     grid-template-columns: 1fr;
+    button {
+      margin-bottom: 30px;
+    }
 
     img {
       grid-row-start: 2;
+      padding: 0 10px 10px 10px;
+      height: 230px;
     }
 
     .BlogListItemContent {
