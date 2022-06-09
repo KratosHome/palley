@@ -24,7 +24,6 @@ export const ProductListIteStyle = styled.div`
 
 
   img {
-    width: 100%;
     height: 20em;
   }
 
