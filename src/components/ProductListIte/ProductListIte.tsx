@@ -15,7 +15,7 @@ export const ProductListIte: React.FC<ProductListIteType> = ({id, name, prise, n
             let calculate = ((prise - newPrise) / prise * 100)
             setSale(Math.floor((calculate)))
         }
-    }, [prise])
+    }, [prise, newPrise])
 
 
     return (
