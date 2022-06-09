@@ -1,6 +1,5 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Link} from "react-router-dom";
-import {Navigation, Pagination, Autoplay} from "swiper";
+import { Pagination, Autoplay} from "swiper";
 import {collectionFirstServer} from "../../../API/TestServer/banerMainServer";
 import "swiper/css";
 import "swiper/css/pagination";
