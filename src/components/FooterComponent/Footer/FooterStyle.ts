@@ -72,7 +72,7 @@ export const FootetStyle = styled.footer`
     width: 80px;
     height: 1px;
     background-color: ${props => props.theme.colors.backgroundButton};
-    margin-left: 217px;
+    margin-left: 227px;
     margin-top: -5px;
     transition: 500ms ease-out;
   }
