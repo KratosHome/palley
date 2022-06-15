@@ -1,15 +1,16 @@
 import {MayButtonType} from "./MayButtonType";
 import {MayButtonStyle} from "./MayButtonStyle";
+import {Link} from "react-router-dom";
 
 
-export const MayButton: React.FC<MayButtonType> = ({children, onClick, ...props}) => {
+export const MayButton: React.FC<MayButtonType> = ({children, onClick, backgroundColor, colorText, linkTo}) => {
     return (
         <MayButtonStyle
-            {...props}
             onClick={onClick}
-            className="MayButton"
+            backgroundColor={backgroundColor}
+            colorText={colorText}
         >
-            <span>{children}</span>
+            <Link to={linkTo}>{children}</Link>
         </MayButtonStyle>
     )
 };

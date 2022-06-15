@@ -15,7 +15,13 @@ export const BlogListItem: React.FC<BlogListItemType> = ({id, title, content, im
                     :
                     <div className="BlogListItemContent">{content}</div>
                 }
-                <MayButton>Read More</MayButton>
+                <MayButton
+                    backgroundColor={"white"}
+                    colorText={"black"}
+                    linkTo={"/"}
+                >
+                    Read More
+                </MayButton>
             </div>
             <img src={img} alt="title"/>
         </BloaListItemStyle>

@@ -4,4 +4,7 @@ export type MayButtonType = {
     disabled?: any
     style?: any
     children: any
+    backgroundColor: any;
+    colorText: any;
+    linkTo: any;
 }
