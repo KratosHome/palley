@@ -5,6 +5,7 @@ export const themeStyle = {
         colorTextButtonHover: "white",
     },
     media: {
+        desktop: "2000px",
         phone: "(max-width: 768px) ",
         tablet: "(max-width: 940px) "
     }
