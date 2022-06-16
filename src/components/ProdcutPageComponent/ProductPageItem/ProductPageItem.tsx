@@ -1,20 +1,27 @@
 import {ProductPageItemType} from "./ProductPageItemType";
 import {ProductPageItemStyle} from "./ProductPageItemSryle";
-import { ProductImg} from "../CardImg/ProductImg";
+import {ProductImg} from "../ProductImg/ProductImg";
+import {ProductTitle} from "../ProductTitle/ProductTitle";
+import { BreadcrumbsComp} from "../../BreadcrumbsComp/BreadcrumbsComp";
 
 
 export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
     return (
         <ProductPageItemStyle>
-            <ProductImg img={item.cart_img}/>
             <div>
-                <div className="ProductPageName">{item.name}</div>
+                <BreadcrumbsComp/>
+                <ProductImg img={item.cart_img}/>
             </div>
-            <div>wresffwrefwerger</div>
-            <div className="priseProductPageItem">
-                <span>${item.prise} $</span>
-                <span>${item.newPrise} $</span>
+            <div>
+                <ProductTitle
+                    name={item.name}
+                    prise={item.prise}
+                    newPrise={item.newPrise}
+                    grade={item.grade}
+                />
+                <div>fvsdfvdfs</div>
             </div>
+            <div>frefwerf</div>
         </ProductPageItemStyle>
     )
 };

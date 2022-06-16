@@ -5,5 +5,6 @@ import {ProductPage} from "../pages/ProductPage/ProductPage";
 export const ProviderRouter: any[] = [
     {path: "/", component: <Main/>},
     {path: "/*", component: <NotFound/>},
-    {path: "/products/:id", component: <ProductPage/>}
+    {path: "/:page/:id", component: <ProductPage/>},
+    {path: "/:id", component: <ProductPage/>}
 ];

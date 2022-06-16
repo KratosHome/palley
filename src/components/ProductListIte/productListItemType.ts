@@ -4,4 +4,6 @@ export type ProductListIteType = {
     prise: number  | null,
     newPrise: number  | null,
     img: string;
+    page: string
+    link: string
 }

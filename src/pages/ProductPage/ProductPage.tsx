@@ -6,7 +6,7 @@ export const ProductPage = () => {
 
     const pageId = useParams();
     const getProductInProduct = ProductServer.filter(
-        (item: any) => item.id === pageId.id
+        (item: any) => item.link === pageId.id
     );
 
     return (

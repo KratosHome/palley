@@ -1,6 +1,7 @@
 export const ProductServer = [
     {
         "id": "1",
+        "link": "ChargeWorx_Folding",
         "name": "ChargeWorx Folding",
         "prise": 70,
         "newPrise": 50,
@@ -10,6 +11,7 @@ export const ProductServer = [
     {
         "id": "2",
         "name": "Clear Case With MagSafe",
+        "link": "Clear_Case_With_MagSafe",
         "prise": null,
         "newPrise": 50,
         "grade": 5,
@@ -18,6 +20,7 @@ export const ProductServer = [
     {
         "id": "3",
         "name": "HDMI Multiport Adapter",
+        "link": "HDMI_Multiport_Adapter",
         "prise": 20,
         "newPrise": 12,
         "grade": 4.2,
@@ -26,6 +29,7 @@ export const ProductServer = [
     {
         "id": "4",
         "name": "Mighty Mini 130 30W",
+        "link": "Mighty_Mini_130_30W",
         "prise": 30,
         "newPrise": 22,
         "grade": 1.9,
@@ -34,23 +38,26 @@ export const ProductServer = [
     {
         "id": "5",
         "name": "PowerBox 160 US",
+        "link": "PowerBox_160_US",
         "prise": null,
         "newPrise": 25,
-        "grade": null,
+        "grade": 0,
         "cart_img": ["/img/product/PowerBox_160_US.jpg"],
     },
     {
         "id": "6",
         "name": "Premium World Power",
+        "link": "Premium_World_Power",
         "prise": null,
         "newPrise": 21,
-        "grade": null,
+        "grade": 0,
         "cart_img": ["/img/product/Premium_World_Power.jpg"],
 
     },
     {
         "id": "7",
         "name": "Thin Case For IPhone",
+        "link": "Thin_Case_For_IPhone",
         "prise": 75,
         "newPrise": 65,
         "grade": 4.4,
@@ -59,8 +66,18 @@ export const ProductServer = [
     {
         "id": "8",
         "name": "Thin Smartphone Case",
+        "link": "Thin_Smartphone_Case",
         "prise": 105,
-        "grade": null,
+        "newPrise": 25,
+        "grade": 0,
         "cart_img": ["/img/product/Thin_Smartphone_Case.jpg"],
+    },
+    {
+        "id": "9",
+        "name": "Waterproof Wireless Charging",
+        "link": "Waterproof_Wireless_Charging",
+        "prise": 34,
+        "newPrise": 22,
+        "cart_img": ["/img/product/Waterproof_Wireless-Charging.jpg"],
     }
 ]

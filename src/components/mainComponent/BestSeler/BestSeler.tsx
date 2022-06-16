@@ -17,6 +17,8 @@ export const BestSeler: React.FC<BestSelerType> = ({h3, text, products}) => {
                         prise={item.prise}
                         newPrise={item.newPrise}
                         img={item.img}
+                        link={item.link}
+                        page={""}
                     />
                 )}
             </div>

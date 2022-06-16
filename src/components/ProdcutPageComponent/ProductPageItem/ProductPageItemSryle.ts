@@ -1,69 +1,44 @@
 import styled from "styled-components";
 
 export const ProductPageItemStyle = styled.div`
-  
+
   max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   
 
-
-
-
-
-
-
-
-
-
-  .ProductPageItems {
-    font-family: MyFont4;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0 10px 0 0;
-  }
-
-  .ProductPageName {
-    font-family: MyFont;
-    font-size: 24px;
-    font-weight: 500;
-    color: #111;
-    text-transform: capitalize;
-    padding-right: 40px;
-    margin-bottom: 20px;
-  }
-
-  .ProductPageContainerPrise {
-    display: flex;
-    margin-bottom: 20px;
-  }
-
-  .ProductPageNameNewPrise {
-    color: #83868c;
-    text-decoration: line-through;
-    margin-right: 20px;
-  }
-
-  .ProductPageNamePrise {
-    color: #2dbbf0;
-    font-size: 18px;
-  }
-
-  .ProductPageContainerLikes {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .addToWidhListBordeer {
-    position: relative;
+  .addToWishListProductPageItem {
+    position: absolute;
+    right: 3rem;
     border: 1px solid rgba(191, 175, 175, 0.5);
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    transition: 200ms;
+  }
+
+  .addToWishListProductPageItem:before {
+    display: block;
+    content: "\\f004";
+    font-family: FontAwesome;
+    color: rgb(166, 151, 151);
+    font-size: 1em;
+    margin: 12px;
+    transition: 200ms;
+  }
+
+  .addToWishListProductPageItem:hover {
+    cursor: pointer;
+    background-color: #2dbbf0;
+  }
+
+  .addToWishListProductPageItem:hover:before {
+    color: white;
   }
 
   .addToWidhList {
@@ -73,10 +48,6 @@ export const ProductPageItemStyle = styled.div`
     right: 25%;
   }
 
-  .addToWidhListBordeer:hover .addToWidhList {
-    color: #2dbbf0;
-    cursor: pointer;
-  }
 
   .ProductPageDiscription {
     position: relative;
