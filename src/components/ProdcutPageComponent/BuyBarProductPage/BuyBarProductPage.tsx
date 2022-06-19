@@ -7,7 +7,7 @@ export const BuyBarProductPage: React.FC<BuyBarProductPageType> = ({remainder}) 
     return (
         <BuyBarProductPageStyle>
             <div className="SoldInTwelveHours">
-                HURRY! ONLY <span>{remainder}</span>LEFT IN STOCK
+                {fillerRelativePercentage > 100 ? "" : "HURRY! ONLY"} <span>{remainder}</span>LEFT IN STOCK
             </div>
             <div className="wrapper">
                 <div className="barContainer">

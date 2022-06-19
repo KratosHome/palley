@@ -9,7 +9,7 @@ export const BreadcrumbsComp: React.FC<{}> = () => {
     return (
         <BreadcrumbsCompStyle>
             {breadcrumbs.map(({match, breadcrumb}) =>
-                    <Link to={match.pathname} >
+                    <Link to={match.pathname} key={match.pathname} >
                         {breadcrumb}
                     </Link>
             )}

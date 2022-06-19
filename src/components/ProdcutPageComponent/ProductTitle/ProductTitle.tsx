@@ -9,12 +9,13 @@ export const ProductTitle: React.FC<ProductTitleType> = ({name, prise, newPrise,
             <h1>{name}</h1>
             <div className="addToWishListProductPageItem"/>
             {prise ?
-                <>
+                <div className="priseContainerProductTitle">
                     <span className="priseProductPageItem">${prise} USD </span>
                     <span className="newPriseProductPageItem">${newPrise} USD</span>
-                </> : <>
+                </div> :
+                <div className="priseContainerProductTitle">
                     <span className="newPriseProductPageItem">${newPrise} USD</span>
-                </>
+                </div>
             }
             <div className="ratingProductPageItem">
                 <Rating name="size-medium" defaultValue={grade} readOnly/>

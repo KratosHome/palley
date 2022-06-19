@@ -24,8 +24,8 @@ export const ProductTitleStyle = styled.div`
   }
 
   .addToWishListProductPageItem {
-    position: absolute;
-    right: 3rem;
+    position: relative;
+    margin-left: 85%;
     border: 1px solid rgba(191, 175, 175, 0.5);
     border-radius: 50%;
     width: 40px;
@@ -52,6 +52,9 @@ export const ProductTitleStyle = styled.div`
     color: white;
   }
   
+  .priseContainerProductTitle{
+    margin-top: -45px;
+  }
   .priseProductPageItem {
     color: rgba(0, 0, 0, 0.4);
     text-decoration: line-through;
