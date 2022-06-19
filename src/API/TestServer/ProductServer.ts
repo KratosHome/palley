@@ -8,6 +8,8 @@ export const ProductServer = [
         "grade": 3.8,
         "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/ChargeWorx_Folding.jpg", "/img/product/ChargeWorx_Folding_2.jpg", "/img/product/ChargeWorx_Folding_3.jpg", "/img/product/ChargeWorx_Folding_4.jpg"],
+        "soldInTwelveHours": 12,
+        "remainder": 20,
     },
     {
         "id": "2",
@@ -18,6 +20,8 @@ export const ProductServer = [
         "grade": 5,
         "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/Clear_Case_With_MagSafe.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/15W_Wireless_Charging_3.jpg"],
+        "soldInTwelveHours": 3,
+        "remainder": 140,
     },
     {
         "id": "3",
@@ -28,6 +32,8 @@ export const ProductServer = [
         "grade": 4.2,
         "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/HDMI_Multiport_Adapter.jpg"],
+        "soldInTwelveHours": 18,
+        "remainder": 10,
     },
     {
         "id": "4",
@@ -38,6 +44,8 @@ export const ProductServer = [
         "grade": 1.9,
         "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/Might_Mini_130_30W.jpg"],
+        "soldInTwelveHours": 5,
+        "remainder": 25,
     },
     {
         "id": "5",
@@ -48,6 +56,8 @@ export const ProductServer = [
         "grade": 0,
         "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/PowerBox_160_US.jpg"],
+        "soldInTwelveHours": 9,
+        "remainder": 9,
     },
     {
         "id": "6",
@@ -58,7 +68,8 @@ export const ProductServer = [
         "grade": 0,
         "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/Premium_World_Power.jpg"],
-
+        "soldInTwelveHours": 155,
+        "remainder": 3,
     },
     {
         "id": "7",
@@ -69,6 +80,8 @@ export const ProductServer = [
         "grade": 4.4,
         "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/Thin_Case_For_IPhone.jp"],
+        "soldInTwelveHours": 1,
+        "remainder": 28,
     },
     {
         "id": "8",
@@ -79,6 +92,8 @@ export const ProductServer = [
         "grade": 0,
         "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/Thin_Smartphone_Case.jpg"],
+        "soldInTwelveHours": 0,
+        "remainder": 105,
     },
     {
         "id": "9",
@@ -88,5 +103,7 @@ export const ProductServer = [
         "newPrise": 22,
         "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/Waterproof_Wireless-Charging.jpg"],
+        "soldInTwelveHours": 31,
+        "remainder": 2,
     }
 ]

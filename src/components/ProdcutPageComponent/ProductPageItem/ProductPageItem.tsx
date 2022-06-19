@@ -2,7 +2,8 @@ import {ProductPageItemType} from "./ProductPageItemType";
 import {ProductPageItemStyle} from "./ProductPageItemSryle";
 import {ProductImg} from "../ProductImg/ProductImg";
 import {ProductTitle} from "../ProductTitle/ProductTitle";
-import { BreadcrumbsComp} from "../../BreadcrumbsComp/BreadcrumbsComp";
+import {BreadcrumbsComp} from "../../BreadcrumbsComp/BreadcrumbsComp";
+import {BuyBarProductPage} from "../BuyBarProductPage/BuyBarProductPage";
 
 
 export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
@@ -19,7 +20,12 @@ export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
                     newPrise={item.newPrise}
                     grade={item.grade}
                 />
-                <div className="ProductPageItemDescription">{item.description}</div>
+                <div className="descriptionProductPageItem">{item.description}</div>
+                <div className="soldLastProductPageItem">
+                    <span>{item.soldInTwelveHours}</span> sold in last{" "}
+                    <span>20</span> Hour
+                </div>
+                <BuyBarProductPage remainder={item.remainder}/>
             </div>
             <div>frefwerf</div>
         </ProductPageItemStyle>

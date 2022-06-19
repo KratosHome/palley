@@ -7,4 +7,6 @@ export type productTypes = {
     img: string,
     cart_img: string[];
     description: string;
+    soldInTwelveHours: number;
+    remainder: number;
 }
