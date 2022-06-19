@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const NotFoundStyle = styled.div`
-  max-width: 2000px;
+  max-width: ${props => props.theme.media.desktop};
   height: 500px;
   margin-left: auto;
   margin-right: auto;

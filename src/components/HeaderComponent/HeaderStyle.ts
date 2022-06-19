@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderStyles = styled.header`
-  max-width: 2000px;
+  max-width: ${props => props.theme.media.desktop};
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -31,7 +31,7 @@ export const HeaderStyles = styled.header`
     margin: 0 10px 0 0;
   }
 
-  @media (max-width: 768px) {
+  @media ${props => props.theme.media.phone} {
     .logo {
       grid-row-start: 2;
     }

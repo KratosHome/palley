@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FootetStyle = styled.footer`
 
-  max-width: 2000px;
+  max-width: ${props => props.theme.media.desktop};
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;

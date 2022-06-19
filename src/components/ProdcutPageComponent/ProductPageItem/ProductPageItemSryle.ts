@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProductPageItemStyle = styled.div`
 
-  max-width: 2000px;
+  max-width: ${props => props.theme.media.desktop};
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;

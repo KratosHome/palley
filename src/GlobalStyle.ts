@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   }
  
   .containerMain{
-    max-width: 2000px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
   }
