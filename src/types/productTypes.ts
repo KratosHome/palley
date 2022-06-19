@@ -6,4 +6,5 @@ export type productTypes = {
     newPrise: number,
     img: string,
     cart_img: string[];
+    description: string;
 }

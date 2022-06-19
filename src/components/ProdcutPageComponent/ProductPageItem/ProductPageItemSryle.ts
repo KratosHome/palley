@@ -12,35 +12,6 @@ export const ProductPageItemStyle = styled.div`
   grid-template-columns: 1fr 1fr;
   
 
-  .addToWishListProductPageItem {
-    position: absolute;
-    right: 3rem;
-    border: 1px solid rgba(191, 175, 175, 0.5);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    transition: 200ms;
-  }
-
-  .addToWishListProductPageItem:before {
-    display: block;
-    content: "\\f004";
-    font-family: FontAwesome;
-    color: rgb(166, 151, 151);
-    font-size: 1em;
-    margin: 12px;
-    transition: 200ms;
-  }
-
-  .addToWishListProductPageItem:hover {
-    cursor: pointer;
-    background-color: #2dbbf0;
-  }
-
-  .addToWishListProductPageItem:hover:before {
-    color: white;
-  }
-
   .addToWidhList {
     position: absolute;
     font-size: 18px;
@@ -190,25 +161,18 @@ export const ProductPageItemStyle = styled.div`
     text-align: center;
   }
 
-  .alert-enter {
-    opacity: 0;
-    transform: scale(0.9);
-  }
 
-  .alert-enter-active {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity 300ms, transform 300ms;
-  }
 
-  .alert-exit {
-    opacity: 1;
+  .ProductPageItemDescription{
+    font-family: MyFont6;
+    font-size: 1rem;
+    color: #969696;
+    line-height: 1.6;
+    font-weight: 400;
+    padding: 20px 0 0 0;
   }
-
-  .alert-exit-active {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 300ms, transform 300ms;
+  
+  @media ${props => props.theme.media.phone} {
+    grid-template-columns: 1fr
   }
-
 `

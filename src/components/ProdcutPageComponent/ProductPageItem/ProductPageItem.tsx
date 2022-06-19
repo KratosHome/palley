@@ -19,7 +19,7 @@ export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
                     newPrise={item.newPrise}
                     grade={item.grade}
                 />
-                <div>fvsdfvdfs</div>
+                <div className="ProductPageItemDescription">{item.description}</div>
             </div>
             <div>frefwerf</div>
         </ProductPageItemStyle>
