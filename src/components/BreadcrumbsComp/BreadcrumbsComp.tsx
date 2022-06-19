@@ -1,19 +1,18 @@
 import {Link, useNavigate} from "react-router-dom";
 import useBreadcrumbs from 'use-react-router-breadcrumbs';
+import {BreadcrumbsCompStyle} from "./BreadcrumbsCompStyle";
 
 export const BreadcrumbsComp: React.FC<{}> = () => {
 
     const breadcrumbs = useBreadcrumbs();
 
     return (
-        <div>
+        <BreadcrumbsCompStyle>
             {breadcrumbs.map(({match, breadcrumb}) =>
-                <div key={match.pathname}>
-                    <Link to={match.pathname}>
+                    <Link to={match.pathname} >
                         {breadcrumb}
                     </Link>
-                </div>
             )}
-        </div>
+        </BreadcrumbsCompStyle>
     );
 };

@@ -16,9 +16,6 @@ export const Main = () => {
             <CollectionFirst
                 collection={collectionFirstServer}
             />
-            <div>
-                ewr
-            </div>
             <BestSeler
                 h3="best seler"
                 text="Best Seller Product This Week!"
