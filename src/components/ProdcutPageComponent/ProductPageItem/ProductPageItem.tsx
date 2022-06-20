@@ -4,6 +4,7 @@ import {ProductImg} from "../ProductImg/ProductImg";
 import {ProductTitle} from "../ProductTitle/ProductTitle";
 import {BreadcrumbsComp} from "../../BreadcrumbsComp/BreadcrumbsComp";
 import {BuyBarProductPage} from "../BuyBarProductPage/BuyBarProductPage";
+import { SizeGuideMoadalProductPage } from "../SizeGuideMoadalProductPage/SizeGuideMoadalProductPage";
 
 
 export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
@@ -26,6 +27,11 @@ export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
                     <span>20</span> Hour
                 </div>
                 <BuyBarProductPage remainder={item.remainder}/>
+                <div className="modalContainerProductPage">
+                    <SizeGuideMoadalProductPage/>
+                    <SizeGuideMoadalProductPage/>
+                    <SizeGuideMoadalProductPage/>
+                </div>
             </div>
             <div>frefwerf</div>
         </ProductPageItemStyle>

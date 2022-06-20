@@ -41,6 +41,19 @@ export const ProductPageItemStyle = styled.div`
     font-weight: 600;
     color: ${props => props.theme.colors.backgroundButton};
   }
+  .modalContainerProductPage {
+    margin-top: 2rem;
+    font-family: MyFont1;
+    display: flex;
+    margin-right: 20px;
+    font-weight: bold;
+    color: black;
+  }
+
+
+
+
+    
   @media ${props => props.theme.media.phone} {
     grid-template-columns: 1fr
   }
