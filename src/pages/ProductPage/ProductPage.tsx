@@ -1,6 +1,7 @@
 import {useParams} from "react-router-dom";
 import {ProductServer} from "../../API/TestServer/ProductServer";
 import {ProductPageItem} from "../../components/ProdcutPageComponent/ProductPageItem/ProductPageItem";
+import {NotFound} from "../NotFound/NotFound";
 
 export const ProductPage = () => {
 
@@ -11,9 +12,16 @@ export const ProductPage = () => {
 
     return (
         <>
-            {getProductInProduct.map((item: any) =>
-                <ProductPageItem key={item.id} item={item}/>
-            )}
+            {
+                getProductInProduct.length === 0
+                    ?
+                    <NotFound/>
+                    :
+                    getProductInProduct.map((item: any) =>
+                        <ProductPageItem key={item.id} item={item}/>
+                    )
+
+            }
         </>
     )
 };
