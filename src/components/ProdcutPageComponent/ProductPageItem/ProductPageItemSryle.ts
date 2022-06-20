@@ -49,12 +49,12 @@ export const ProductPageItemStyle = styled.div`
     font-weight: bold;
     color: black;
   }
-
-
-
-
+  
     
   @media ${props => props.theme.media.phone} {
+    .modalContainerProductPage{
+      justify-content: space-around;
+    }
     grid-template-columns: 1fr
   }
 `

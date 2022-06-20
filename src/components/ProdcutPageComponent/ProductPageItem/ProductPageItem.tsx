@@ -4,7 +4,9 @@ import {ProductImg} from "../ProductImg/ProductImg";
 import {ProductTitle} from "../ProductTitle/ProductTitle";
 import {BreadcrumbsComp} from "../../BreadcrumbsComp/BreadcrumbsComp";
 import {BuyBarProductPage} from "../BuyBarProductPage/BuyBarProductPage";
-import { SizeGuideMoadalProductPage } from "../SizeGuideMoadalProductPage/SizeGuideMoadalProductPage";
+import {SizeGuideMoadalProductPage} from "../SizeGuideMoadalProductPage/SizeGuideMoadalProductPage";
+import {DeliveryReturnProductPage} from "../DeliveryReturnProductPage/DeliveryReturnProductPage";
+import {AskQuestionProductPage} from "../AskQuestionProductPage/AskQuestionProductPage";
 
 
 export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
@@ -29,8 +31,8 @@ export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
                 <BuyBarProductPage remainder={item.remainder}/>
                 <div className="modalContainerProductPage">
                     <SizeGuideMoadalProductPage/>
-                    <SizeGuideMoadalProductPage/>
-                    <SizeGuideMoadalProductPage/>
+                    <DeliveryReturnProductPage/>
+                    <AskQuestionProductPage/>
                 </div>
             </div>
             <div>frefwerf</div>

@@ -1,4 +1,4 @@
-export type MayButtonType = {
+export type MayButtonFormType = {
     onClick?: any,
     props?: any,
     disabled?: any
@@ -6,5 +6,4 @@ export type MayButtonType = {
     children: any
     backgroundColor: any;
     colorText: any;
-    linkTo?: any;
 }

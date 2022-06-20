@@ -18,6 +18,7 @@ export const SizeGuideMoadalProductPageStyle = styled.div`
 
   .inactiveSizeModalProduct,
   .activeSizeModalProduct {
+    white-space: nowrap;
     font-family: MyFont6;
     margin: 0 10px 0px 10px;
     padding: 10px;
@@ -112,5 +113,10 @@ export const SizeGuideMoadalProductPageStyle = styled.div`
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 10px 20px 10px 20px;
   }
+  @media ${props => props.theme.media.phone} {
 
+    td, th {
+      padding: 5px 10px 5px 10px;
+    }
+  }
 `
