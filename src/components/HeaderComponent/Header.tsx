@@ -1,6 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
 import logo from "../../img/icons/logo.png";
-import cart from "../../img/icons/cart.png";
 import search from "../../img/icons/search.png";
 import personal_area from "../../img/icons/personal_area.png";
 import like from "../../img/icons/like.png";

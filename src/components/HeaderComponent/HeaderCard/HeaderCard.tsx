@@ -1,7 +1,6 @@
 import {HeaderCardStyle} from "./HeaderCardStyle";
 import React, {useState} from "react";
 import cart from "../../../img/icons/cart.png";
-import {Link} from "react-router-dom";
 import {CSSTransition} from 'react-transition-group';
 import "./HeaderCard.css"
 import {MayButton} from "../../UL/MayButton/MayButton";

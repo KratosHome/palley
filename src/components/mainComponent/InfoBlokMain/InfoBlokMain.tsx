@@ -1,7 +1,6 @@
 import {InfoBlokMainStyle} from "./InfoBlokMainStyle";
 import {InfoBlokMainType} from "./InfoBlokMainType";
 import {MayButton} from "../../UL/MayButton/MayButton";
-import {Link} from "react-router-dom";
 import React from "react";
 
 export const InfoBlokMain: React.FC<InfoBlokMainType> = ({
