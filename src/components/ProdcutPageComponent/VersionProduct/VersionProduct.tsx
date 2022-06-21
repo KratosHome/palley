@@ -1,19 +1,22 @@
 import {VersionProductStyle} from "./VersionProductStyle";
 import {useState} from "react";
+import {MayButtonForm} from "../../UL/MayButtonForm/MayButtonForm";
+import {addInCard, cardActions } from "../../../store/action/cardAction";
+import { useDispatch, useSelector } from "react-redux";
+import { rootState } from "../../../store/reducer/rootReducer";
 
 type versionProductType = {
-    item: any
+    productProd: any
+    product: any
 }
-export const VersionProduct: React.FC<versionProductType> = ({item}) => {
+export const VersionProduct: React.FC<versionProductType> = ({productProd, product}) => {
 
-    const [size, setSize] = useState(item[0].size)
-    const [id, setId] = useState(item[0].id)
-    const [maxCount, setMaxCount] = useState(item[0].count)
-    console.log(id)
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setMaxCount(item[0].count)
-    }
+    const [size, setSize] = useState(productProd[0].size)
+    const [id, setId] = useState(productProd[0].id)
+    const [maxCount, setMaxCount] = useState(productProd[0].count)
+
+
+
     const handleClick = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement> | React.MouseEvent<HTMLInputElement>) => {
         setSize(e.currentTarget.value)
         setId(e.currentTarget.id)
@@ -35,12 +38,25 @@ export const VersionProduct: React.FC<versionProductType> = ({item}) => {
     }
 
 
+    const dispatch = useDispatch()
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        dispatch(cardActions(product))
+        dispatch(addInCard(id))
+    }
+
+    const state = useSelector((state: rootState) => {
+        return state.cardReduser.addToCard
+    })
+
+
+
     return (
         <VersionProductStyle>
             <div className="textVersionProduct">SIZE</div>
             <form onSubmit={handleSubmit}>
                 <div className="variantContainerVersionProduct">
-                    {item.map((it: any) =>
+                    {productProd.map((it: any) =>
                         <div key={it.id}>
                             <input
                                 id={it.id}
@@ -67,6 +83,9 @@ export const VersionProduct: React.FC<versionProductType> = ({item}) => {
                         disabled={count <= minCount}
                     />
                 </div>
+                <MayButtonForm backgroundColor={"#2dbbf0"} colorText={"white"}>
+                    add to cart
+                </MayButtonForm>
             </form>
         </VersionProductStyle>
     )

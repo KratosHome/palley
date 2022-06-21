@@ -31,7 +31,7 @@ export const AskQuestionProductPage = () => {
 
 
     const [show, setShow] = useState(true);
-    console.log(show)
+
     const [getEmail, setGetEmail] = useState({})
     useEffect(() => {
         if (Object.keys(getEmail).length) {
