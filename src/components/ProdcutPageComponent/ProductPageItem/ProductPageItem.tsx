@@ -2,7 +2,12 @@ import {ProductPageItemType} from "./ProductPageItemType";
 import {ProductPageItemStyle} from "./ProductPageItemSryle";
 import {ProductImg} from "../ProductImg/ProductImg";
 import {ProductTitle} from "../ProductTitle/ProductTitle";
-import { BreadcrumbsComp} from "../../BreadcrumbsComp/BreadcrumbsComp";
+import {BreadcrumbsComp} from "../../BreadcrumbsComp/BreadcrumbsComp";
+import {BuyBarProductPage} from "../BuyBarProductPage/BuyBarProductPage";
+import {SizeGuideMoadalProductPage} from "../SizeGuideMoadalProductPage/SizeGuideMoadalProductPage";
+import {DeliveryReturnProductPage} from "../DeliveryReturnProductPage/DeliveryReturnProductPage";
+import {AskQuestionProductPage} from "../AskQuestionProductPage/AskQuestionProductPage";
+import {VersionProduct} from "../VersionProduct/VersionProduct";
 
 
 export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
@@ -19,7 +24,18 @@ export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
                     newPrise={item.newPrise}
                     grade={item.grade}
                 />
-                <div>fvsdfvdfs</div>
+                <div className="descriptionProductPageItem">{item.description}</div>
+                <div className="soldLastProductPageItem">
+                    <span>{item.soldInTwelveHours}</span> sold in last{" "}
+                    <span>20</span> Hour
+                </div>
+                <BuyBarProductPage remainder={item.remainder}/>
+                <div className="modalContainerProductPage">
+                    <SizeGuideMoadalProductPage/>
+                    <DeliveryReturnProductPage/>
+                    <AskQuestionProductPage/>
+                </div>
+                <VersionProduct item={item.prod}/>
             </div>
             <div>frefwerf</div>
         </ProductPageItemStyle>

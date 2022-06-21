@@ -6,5 +6,5 @@ export type MayButtonType = {
     children: any
     backgroundColor: any;
     colorText: any;
-    linkTo: any;
+    linkTo?: any;
 }

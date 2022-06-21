@@ -1,7 +1,8 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import {EffectFlip, Pagination, Navigation} from "swiper";
+import {EffectFlip, Pagination} from "swiper";
 import {ProductImgType} from "./ProductImgType";
 
+import "swiper/css/grid"
 import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
@@ -19,7 +20,7 @@ export const ProductImg: React.FC<ProductImgType> = ({img}) => {
                 modules={[EffectFlip, Pagination]}
                 className="mySwiper"
             >
-                {img.map(item =>
+                {img.map((item: any) =>
                     <SwiperSlide key={item}>
                         <img src={item}/>
                     </SwiperSlide>

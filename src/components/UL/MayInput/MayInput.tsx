@@ -1,4 +1,4 @@
-import {FootetStyle} from "./MayInputStyle";
+import {MayInputStyle} from "./MayInputStyle";
 import {MayInputType} from "./MayInputType";
 
 
@@ -18,7 +18,7 @@ export const MayInput: React.FC<MayInputType> = ({
 
 
     return (
-        <FootetStyle>
+        <MayInputStyle>
             <label
                 htmlFor={label}
             >
@@ -39,6 +39,6 @@ export const MayInput: React.FC<MayInputType> = ({
             />
             {errors?.[label]?.message && <div>{errors?.[label]?.message}</div>}
 
-        </FootetStyle>
+        </MayInputStyle>
     )
 };

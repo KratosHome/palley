@@ -6,7 +6,10 @@ export const FootetBlock1Style = styled.div`
   border: 1px solid rgb(196, 192, 192, 0.2);
   width: 100%;
   height: 300px;
-
+  
+  form input {
+    width: 170px;
+  }
   img {
     width: 120px;
     height: 40px;
@@ -43,12 +46,18 @@ export const FootetBlock1Style = styled.div`
   }
 
   @media ${props => props.theme.media.tablet} {
+    form{
+     display: flex;
+      justify-content: center;
+    }
+    form input {
+      width: 220px;
+    }
     .FooterBlock1Button {
-      border: none;
       width: max-content;
       height: max-content;
       position: absolute;
-      margin: -44px 0 0 85px;
+      margin: 5px 0 0 235px;
     }
   }
 

@@ -23,6 +23,38 @@ export const ProductTitleStyle = styled.div`
     margin-bottom: 1em;
   }
 
+  .addToWishListProductPageItem {
+    position: relative;
+    margin-left: 85%;
+    border: 1px solid rgba(191, 175, 175, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 200ms;
+  }
+
+  .addToWishListProductPageItem:before {
+    display: block;
+    content: "\\f004";
+    font-family: FontAwesome;
+    color: rgb(166, 151, 151);
+    font-size: 1em;
+    margin: 12px;
+    transition: 200ms;
+  }
+
+  .addToWishListProductPageItem:hover {
+    cursor: pointer;
+    background-color: #2dbbf0;
+  }
+
+  .addToWishListProductPageItem:hover:before {
+    color: white;
+  }
+  
+  .priseContainerProductTitle{
+    margin-top: -45px;
+  }
   .priseProductPageItem {
     color: rgba(0, 0, 0, 0.4);
     text-decoration: line-through;
@@ -43,4 +75,6 @@ export const ProductTitleStyle = styled.div`
     color: rgba(0, 0, 0, 0.4);
     font-size: 0.8rem;
   }
+  
+  
 `

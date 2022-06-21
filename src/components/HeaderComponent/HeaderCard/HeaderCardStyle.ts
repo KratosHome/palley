@@ -13,7 +13,7 @@ export const HeaderCardStyle = styled.div`
     right: 0;
     top: 0;
     background-color: white;
-    width: 26em;
+    width: 21em;
     height: 100vh;
     z-index: 2;
   }

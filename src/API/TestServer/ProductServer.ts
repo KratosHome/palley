@@ -6,7 +6,33 @@ export const ProductServer = [
         "prise": 70,
         "newPrise": 50,
         "grade": 3.8,
+        "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/ChargeWorx_Folding.jpg", "/img/product/ChargeWorx_Folding_2.jpg", "/img/product/ChargeWorx_Folding_3.jpg", "/img/product/ChargeWorx_Folding_4.jpg"],
+        "soldInTwelveHours": 12,
+        "remainder": 20,
+        "prod": [
+            {
+                "id": "526851",
+                "size": "S",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526852",
+                "size": "m",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526853",
+                "size": "XS",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            }
+        ]
     },
     {
         "id": "2",
@@ -15,7 +41,33 @@ export const ProductServer = [
         "prise": null,
         "newPrise": 50,
         "grade": 5,
+        "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/Clear_Case_With_MagSafe.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/15W_Wireless_Charging_3.jpg"],
+        "soldInTwelveHours": 3,
+        "remainder": 140,
+        "prod": [
+            {
+                "id": "526851",
+                "size": "S",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526852",
+                "size": "m",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526853",
+                "size": "XS",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            }
+        ]
     },
     {
         "id": "3",
@@ -24,7 +76,33 @@ export const ProductServer = [
         "prise": 20,
         "newPrise": 12,
         "grade": 4.2,
+        "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/HDMI_Multiport_Adapter.jpg"],
+        "soldInTwelveHours": 18,
+        "remainder": 10,
+        "prod": [
+            {
+                "id": "526851",
+                "size": "S",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526852",
+                "size": "m",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526853",
+                "size": "XS",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            }
+        ]
     },
     {
         "id": "4",
@@ -33,7 +111,33 @@ export const ProductServer = [
         "prise": 30,
         "newPrise": 22,
         "grade": 1.9,
+        "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/Might_Mini_130_30W.jpg"],
+        "soldInTwelveHours": 5,
+        "remainder": 25,
+        "prod": [
+            {
+                "id": "526851",
+                "size": "S",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526852",
+                "size": "m",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526853",
+                "size": "XS",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            }
+        ]
     },
     {
         "id": "5",
@@ -42,7 +146,33 @@ export const ProductServer = [
         "prise": null,
         "newPrise": 25,
         "grade": 0,
+        "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/PowerBox_160_US.jpg"],
+        "soldInTwelveHours": 9,
+        "remainder": 9,
+        "prod": [
+            {
+                "id": "526851",
+                "size": "S",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526852",
+                "size": "m",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526853",
+                "size": "XS",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            }
+        ]
     },
     {
         "id": "6",
@@ -51,8 +181,33 @@ export const ProductServer = [
         "prise": null,
         "newPrise": 21,
         "grade": 0,
+        "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/Premium_World_Power.jpg"],
-
+        "soldInTwelveHours": 155,
+        "remainder": 3,
+        "prod": [
+            {
+                "id": "526851",
+                "size": "S",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526852",
+                "size": "m",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526853",
+                "size": "XS",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            }
+        ]
     },
     {
         "id": "7",
@@ -61,7 +216,33 @@ export const ProductServer = [
         "prise": 75,
         "newPrise": 65,
         "grade": 4.4,
+        "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/Thin_Case_For_IPhone.jp"],
+        "soldInTwelveHours": 1,
+        "remainder": 28,
+        "prod": [
+            {
+                "id": "526851",
+                "size": "S",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526852",
+                "size": "m",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526853",
+                "size": "XS",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            }
+        ]
     },
     {
         "id": "8",
@@ -70,7 +251,33 @@ export const ProductServer = [
         "prise": 105,
         "newPrise": 25,
         "grade": 0,
+        "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/Thin_Smartphone_Case.jpg"],
+        "soldInTwelveHours": 0,
+        "remainder": 105,
+        "prod": [
+            {
+                "id": "526851",
+                "size": "S",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526852",
+                "size": "m",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526853",
+                "size": "XS",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            }
+        ]
     },
     {
         "id": "9",
@@ -78,6 +285,32 @@ export const ProductServer = [
         "link": "Waterproof_Wireless_Charging",
         "prise": 34,
         "newPrise": 22,
+        "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
         "cart_img": ["/img/product/Waterproof_Wireless-Charging.jpg"],
+        "soldInTwelveHours": 31,
+        "remainder": 2,
+        "prod": [
+            {
+                "id": "526851",
+                "size": "S",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526852",
+                "size": "m",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            },
+            {
+                "id": "526853",
+                "size": "XS",
+                "prise": 70,
+                "newPrise": 50,
+                "count": 30
+            }
+        ]
     }
 ]

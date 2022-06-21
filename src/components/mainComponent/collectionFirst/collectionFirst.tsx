@@ -11,7 +11,7 @@ export const CollectionFirst: React.FC<CollectionFirstType> = ({
                                                                }) => {
     const [width] = useWindowSize();
      function quantityImg(){
-        let responsive = 6
+        let responsive = 4
         if (+width <= 640) {
             responsive = 1
         } else if (+width <= 989) {
@@ -20,10 +20,6 @@ export const CollectionFirst: React.FC<CollectionFirstType> = ({
             responsive = 3
         } else if (+width <= 1675) {
             responsive = 4
-        } else if (+width <= 2062) {
-            responsive = 5
-        } else if (+width <= 2300) {
-            responsive = 6
         }
         return responsive;
     }
