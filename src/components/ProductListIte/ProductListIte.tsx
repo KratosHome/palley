@@ -1,5 +1,5 @@
 import {ProductListIteStyle} from "./ProductListIteStyle";
-import {Link, useParams} from "react-router-dom";
+import {Link} from "react-router-dom";
 import like from "./../../img/icons/like.png";
 import search from "./../../img/icons/search.png";
 import {ProductListIteType} from "./productListItemType";

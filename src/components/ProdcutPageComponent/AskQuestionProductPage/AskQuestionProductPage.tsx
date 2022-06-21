@@ -2,7 +2,6 @@ import {AskQuestionProductPageStyle} from "./AskQuestionProductPageStyle";
 import {useEffect, useState} from "react";
 import {MayModal} from "../../UL/MayModal/MayModal";
 import {MayInput} from "../../UL/MayInput/MayInput";
-import {MayButton} from "../../UL/MayButton/MayButton";
 import {useForm} from "react-hook-form";
 import {FormValues} from "../../FooterComponent/FooterBlock1/FooterBlock1Type";
 import {
@@ -32,6 +31,7 @@ export const AskQuestionProductPage = () => {
 
 
     const [show, setShow] = useState(true);
+    console.log(show)
     const [getEmail, setGetEmail] = useState({})
     useEffect(() => {
         if (Object.keys(getEmail).length) {

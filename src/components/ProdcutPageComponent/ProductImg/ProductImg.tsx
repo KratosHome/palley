@@ -22,7 +22,7 @@ export const ProductImg: React.FC<ProductImgType> = ({img}) => {
             >
                 {img.map((item: any) =>
                     <SwiperSlide key={item}>
-                        <img src={item}/>
+                        <img src={item} alt={item.name} />
                     </SwiperSlide>
                 )}
             </Swiper>

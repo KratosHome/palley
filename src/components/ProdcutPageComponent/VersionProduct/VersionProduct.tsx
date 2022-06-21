@@ -9,10 +9,10 @@ export const VersionProduct: React.FC<versionProductType> = ({item}) => {
     const [size, setSize] = useState(item[0].size)
     const [id, setId] = useState(item[0].id)
     const [maxCount, setMaxCount] = useState(item[0].count)
-
-
+    console.log(id)
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setMaxCount(item[0].count)
     }
     const handleClick = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement> | React.MouseEvent<HTMLInputElement>) => {
         setSize(e.currentTarget.value)
