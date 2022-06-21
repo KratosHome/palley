@@ -7,6 +7,7 @@ import {BuyBarProductPage} from "../BuyBarProductPage/BuyBarProductPage";
 import {SizeGuideMoadalProductPage} from "../SizeGuideMoadalProductPage/SizeGuideMoadalProductPage";
 import {DeliveryReturnProductPage} from "../DeliveryReturnProductPage/DeliveryReturnProductPage";
 import {AskQuestionProductPage} from "../AskQuestionProductPage/AskQuestionProductPage";
+import {VersionProduct} from "../VersionProduct/VersionProduct";
 
 
 export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
@@ -34,6 +35,7 @@ export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
                     <DeliveryReturnProductPage/>
                     <AskQuestionProductPage/>
                 </div>
+                <VersionProduct item={item.prod}/>
             </div>
             <div>frefwerf</div>
         </ProductPageItemStyle>

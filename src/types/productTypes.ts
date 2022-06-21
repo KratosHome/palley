@@ -9,4 +9,5 @@ export type productTypes = {
     description: string;
     soldInTwelveHours: number;
     remainder: number;
+    prod: any[];
 }
