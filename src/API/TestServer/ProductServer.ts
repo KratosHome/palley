@@ -31,7 +31,7 @@ export const ProductServer = [
                 "prise": 70,
                 "newPrise": 50,
                 "count": 30
-            },
+            }
         ]
     },
     {
@@ -66,7 +66,7 @@ export const ProductServer = [
                 "prise": 70,
                 "newPrise": 50,
                 "count": 30
-            },
+            }
         ]
     },
     {
@@ -101,7 +101,7 @@ export const ProductServer = [
                 "prise": 70,
                 "newPrise": 50,
                 "count": 30
-            },
+            }
         ]
     },
     {
@@ -136,7 +136,7 @@ export const ProductServer = [
                 "prise": 70,
                 "newPrise": 50,
                 "count": 30
-            },
+            }
         ]
     },
     {
@@ -171,7 +171,7 @@ export const ProductServer = [
                 "prise": 70,
                 "newPrise": 50,
                 "count": 30
-            },
+            }
         ]
     },
     {
@@ -206,7 +206,7 @@ export const ProductServer = [
                 "prise": 70,
                 "newPrise": 50,
                 "count": 30
-            },
+            }
         ]
     },
     {
@@ -241,7 +241,7 @@ export const ProductServer = [
                 "prise": 70,
                 "newPrise": 50,
                 "count": 30
-            },
+            }
         ]
     },
     {
@@ -276,7 +276,7 @@ export const ProductServer = [
                 "prise": 70,
                 "newPrise": 50,
                 "count": 30
-            },
+            }
         ]
     },
     {
@@ -310,7 +310,7 @@ export const ProductServer = [
                 "prise": 70,
                 "newPrise": 50,
                 "count": 30
-            },
+            }
         ]
     }
 ]

@@ -1,26 +1,34 @@
 import {useParams} from "react-router-dom";
-import {ProductServer} from "../../API/TestServer/ProductServer";
+import {Loader} from "../../components/Loader/Loader";
 import {ProductPageItem} from "../../components/ProdcutPageComponent/ProductPageItem/ProductPageItem";
+import {useTypeSelector} from "../../hooks/useTypeSelector";
 import {NotFound} from "../NotFound/NotFound";
 
 export const ProductPage = () => {
 
+    const {loading, products} = useTypeSelector(
+        (state) => state.getProduct);
+
+
     const pageId = useParams();
-    const getProductInProduct = ProductServer.filter(
+    const getProductInProduct = products.filter(
         (item: any) => item.link === pageId.id
     );
 
     return (
         <>
             {
-                getProductInProduct.length === 0
+                loading
                     ?
-                    <NotFound/>
+                    <Loader/>
                     :
-                    getProductInProduct.map((item: any) =>
-                        <ProductPageItem key={item.id} item={item}/>
-                    )
-
+                    getProductInProduct.length === 0
+                        ?
+                        <NotFound/>
+                        :
+                        getProductInProduct.map((item: any) =>
+                            <ProductPageItem key={item.id} item={item}/>
+                        )
             }
         </>
     )
