@@ -5,14 +5,14 @@ import {GlobalStyle} from "./GlobalStyle";
 import {AppRouter} from "./router/AppRoute";
 import {BrowserRouter} from "react-router-dom";
 import {Footer} from "./components/FooterComponent/Footer/Footer";
-import {useDispatch} from "react-redux";
-import {getProductAction} from "./store/action/getProductAction";
+import {fetshExchangeRateAction} from "./store/action/getProductAction";
+import {useAppDispatch} from "./hooks/useRedux";
 
 
 function App() {
-    const dispatch = useDispatch()
+    const dispatch = useAppDispatch()
     useEffect(() => {
-        getProductAction()(dispatch)
+        dispatch(fetshExchangeRateAction())
     }, [dispatch]);
 
 

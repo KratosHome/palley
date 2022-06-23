@@ -1,28 +1,17 @@
-import {Dispatch} from 'redux';
-import {productTypes} from "../../types/productTypes";
 import {productServerMew} from "../../API/productServerMew";
-import { GetProductTypes } from '../typeStore/getProductType';
+import { AppDispatch } from "../rootReducer"
+import {getProductReducer} from "../reducer/getProductReducer";
 
 
-export const setProductAction = (product: productTypes) => {
-    return {
-        type: GetProductTypes.SET_PRODUCT_ENUM,
-        product: product
+export const fetshExchangeRateAction = () => async (dispatch: AppDispatch) => {
+    try{
+        dispatch(getProductReducer.actions.getProductReduceFetching())
+        let response = await productServerMew.getProducts()
+        dispatch(getProductReducer.actions.getProductReduceSucces(response.data))
+    } catch (e: any) {
+        dispatch(getProductReducer.actions.getProductReduceError(e.message))
     }
 }
 
-export const setLoading = (loading: boolean) => {
-    return {
-        type: GetProductTypes.IS_LOADING,
-        loading: loading
-    }
-}
-
-export const getProductAction = () => async (dispatch: Dispatch) => {
-    dispatch(setLoading(true))
-    let response = await productServerMew.getProducts()
-    dispatch(setProductAction(response.data));
-    dispatch(setLoading(false))
-}
 
 

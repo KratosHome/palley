@@ -1,20 +1,25 @@
 import {VersionProductStyle} from "./VersionProductStyle";
 import {useState} from "react";
 import {MayButtonForm} from "../../UL/MayButtonForm/MayButtonForm";
-import {addInCard, cardActions } from "../../../store/action/cardAction";
-import { useDispatch, useSelector } from "react-redux";
-import { rootState } from "../../../store/reducer/rootReducer";
+import { useAppDispatch } from "../../../hooks/useRedux";
+import {getProductReducer} from "../../../store/reducer/getProductReducer";
+import {getProductInCard} from "../../../store/reducer/getProductInCard";
+
+
 
 type versionProductType = {
     productProd: any
     product: any
+    idVariant: any
 }
-export const VersionProduct: React.FC<versionProductType> = ({productProd, product}) => {
+export const VersionProduct: React.FC<versionProductType> = ({productProd, product, idVariant}) => {
 
     const [size, setSize] = useState(productProd[0].size)
     const [id, setId] = useState(productProd[0].id)
     const [maxCount, setMaxCount] = useState(productProd[0].count)
 
+    const dispatch = useAppDispatch()
+    const {getProdcut, getVariant} = getProductInCard.actions
 
 
     const handleClick = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement> | React.MouseEvent<HTMLInputElement>) => {
@@ -38,16 +43,12 @@ export const VersionProduct: React.FC<versionProductType> = ({productProd, produ
     }
 
 
-    const dispatch = useDispatch()
+
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        dispatch(cardActions(product))
-        dispatch(addInCard(id))
+        dispatch(getProdcut(product))
+        dispatch(getVariant(id))
     }
-
-    const state = useSelector((state: rootState) => {
-        return state.cardReduser.addToCard
-    })
 
 
 

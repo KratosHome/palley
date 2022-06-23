@@ -1,31 +1,38 @@
 
 import {productTypes} from "../../types/productTypes";
-import {GetProductTypes, productType} from "../typeStore/getProductType";
+import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+
 
 interface intialStateTupe {
-    products: productTypes[]
+    products: any
     loading: boolean
+    errors: string
 }
 
 const initialState: intialStateTupe = {
     products: [],
-    loading: true
+    loading: true,
+    errors: "",
 }
 
-export const getProductReducer = (state = initialState, action: productType) => {
-        switch (action.type) {
-            case GetProductTypes.SET_PRODUCT_ENUM:
-                return {
-                    ...state,
-                    products: action.product
-                }
-            case GetProductTypes.IS_LOADING:
-                return {
-                    ...state,
-                    loading: action.loading
-                }
-            default:
-                return state;
-        }
-    }
-;
+export const getProductReducer = createSlice({
+    name: "getExchangeRate",
+    initialState,
+    reducers: {
+        getProductReduceFetching: (state:any) => ({
+            ...state,
+            loading: true
+        }),
+        getProductReduceSucces: (state:any , action: PayloadAction<any[]>) => ({
+            ...state,
+            products: action.payload,
+            loading: false
+        }),
+        getProductReduceError: (state:any , action: PayloadAction<any[]>) => ({
+            ...state,
+            errors: action.payload,
+            loading: false
+        }),
+    },
+})
+export default getProductReducer.reducer

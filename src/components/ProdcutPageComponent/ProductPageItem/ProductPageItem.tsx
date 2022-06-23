@@ -35,7 +35,7 @@ export const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
                     <DeliveryReturnProductPage/>
                     <AskQuestionProductPage/>
                 </div>
-                <VersionProduct productProd={item.prod} product={item}/>
+                <VersionProduct productProd={item.prod} product={item} idVariant={item.id}/>
             </div>
             <div>frefwerf</div>
         </ProductPageItemStyle>

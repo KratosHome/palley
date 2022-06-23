@@ -4,16 +4,47 @@ import cart from "../../../img/icons/cart.png";
 import {CSSTransition} from 'react-transition-group';
 import "./HeaderCard.css"
 import {MayButton} from "../../UL/MayButton/MayButton";
+import {useSelector} from "react-redux";
+import {rootState} from "../../../store/rootReducer";
+import {useAppSelector} from "../../../hooks/useRedux";
+import { useRemoveduplicates } from "../../../hooks/useRemoveduplicates";
 
+export const getProductsObject = (array: any) =>
+    array.reduce(
+        (objekt: any, product: any) => ({
+            ...objekt,
+            [product.id]: product,
+        }),
+        {}
+    );
 
-export const HeaderCard: React.FC<{}> = () => {
+export const HeaderCard = () => {
 
     const [cardActive, setCardActive] = useState(false)
 
+    const state = useSelector((state: rootState) => {
+        return state.getProductReducer
+    })
+//
+    const {product, productVariant} = useAppSelector(state => state.getProductInCard)
+
+
+    const sortProductInState = useRemoveduplicates(product)
+
+
+
+    console.log(productVariant)
 
     return (
         <HeaderCardStyle>
             <img className="imgHeaderCard" src={cart} alt="cart" onClick={() => setCardActive(!cardActive)}/>
+            {
+                sortProductInState.length === 0
+                    ?
+                    null
+                    :
+                    <div className="addProdcitImgHeaderCard"></div>
+            }
             <CSSTransition
                 in={cardActive}
                 timeout={200}
@@ -30,17 +61,27 @@ export const HeaderCard: React.FC<{}> = () => {
                         </div>
                         <h1>Shopping Cart</h1>
                     </div>
-                    <div className="emptyHeaderCard">
-                        <p>Your shopping bag is empty</p>
-                        <MayButton
-                            linkTo={"/"}
-                            backgroundColor={"black"}
-                            onClick={() => setCardActive(!cardActive)}
-                            colorText={"white"}
-                        >
-                            go to the shop
-                        </MayButton>
-                    </div>
+                    {
+                        sortProductInState.length === 0
+                            ?
+                            <div className="emptyHeaderCard">
+                                <p>Your shopping bag is empty</p>
+                                <MayButton
+                                    linkTo={"/"}
+                                    backgroundColor={"black"}
+                                    onClick={() => setCardActive(!cardActive)}
+                                    colorText={"white"}
+                                >
+                                    go to the shop
+                                </MayButton>
+                            </div>
+                            :
+                            <div>
+                                {sortProductInState.map((item: any)=>
+                                    <div>{item.id}</div>
+                                )}
+                            </div>
+                    }
                 </div>
             </CSSTransition>
             <div className={cardActive ? "menuBlureOpen" : ""}

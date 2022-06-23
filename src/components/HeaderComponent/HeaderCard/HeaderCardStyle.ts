@@ -72,4 +72,13 @@ export const HeaderCardStyle = styled.div`
     color: #111111;
     margin-bottom: 60px;
   }
+
+  .addProdcitImgHeaderCard {
+    margin-top: -10px;
+    margin-left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(134, 182, 234);
+  }
 `

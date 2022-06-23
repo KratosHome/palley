@@ -1,23 +1,20 @@
-import { AddToCardActionsTypes, carActionType } from "../typeStore/cardTypes";
+import {AddToCardActionsTypes, carActionType} from "../typeStore/cardTypes";
 
-const initialState: any = {
-    product: [],
-    addToCard: [],
-    count: 0
-}
+const initialState: any = []
 
 export const cardReduser = (state = initialState, action: carActionType) => {
         switch (action.type) {
-            case AddToCardActionsTypes.ADD_PRODUCT_TO_CARD:
-                return {
-                    ...state,
-                    product: [...state.product, action.data.product],
-                }
-            case AddToCardActionsTypes.PRODUCT_IN_CARD:
-                return {
-                    ...state,
-                    addToCard: [...state.addToCard, action.id]
-                }
+            case AddToCardActionsTypes.PRODUCT_IN_CART_VARIANT:
+
+                        return [...state, action.product]
+
+            case AddToCardActionsTypes.PRODUCT_IN_CART_VARIANT:
+                return state.map((item: any) => {
+                    if (item.id !== action.idVariant) {
+                        return [...state, action.product]
+                    }
+                })
+
             default:
                 return state;
         }
