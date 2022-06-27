@@ -13,7 +13,6 @@ export const ProductPage = () => {
     );
 
 
-
     return (
         <>
             {

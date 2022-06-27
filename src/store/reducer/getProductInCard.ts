@@ -3,13 +3,13 @@ import {productTypes} from "../../types/productTypes";
 
 
 interface IAppState {
-    product: productTypes[] | null | undefined | any | any[]
+    productAdd: productTypes[] | null | undefined | any | any[]
     productVariant: any
 }
 
 const initialState: IAppState = {
-    product: [],
-    productVariant:[]
+    productAdd: [],
+    productVariant: []
 }
 
 
@@ -18,13 +18,23 @@ export const getProductInCard = createSlice({
     initialState,
     reducers: {
         getProdcut(state: any, action: PayloadAction<any>) {
-            state.product.push(action.payload)
+              state.productAdd.push(action.payload);
         },
         getVariant(state: any, action: PayloadAction<any>) {
-            state.productVariant.push(action.payload)
+            state.productAdd.forEach((element: any) => {
+                if (!element.idVariant) {
+                    element.idVariant = action.payload.id
+                    element.size = action.payload.size
+                    element.count = action.payload.count
+                }
+            });
         },
+        deleteProduct: (state: any, action: PayloadAction<any>) => {
+            return state.product.filter((p: any) => p.id !== action.payload.id)
+        },
+
     },
 })
 
 export default getProductInCard.reducer
-export const {getProdcut, getVariant} = getProductInCard.actions
+export const {getProdcut, getVariant, deleteProduct} = getProductInCard.actions

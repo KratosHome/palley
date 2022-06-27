@@ -7,7 +7,7 @@ import {MayButton} from "../../UL/MayButton/MayButton";
 import {useSelector} from "react-redux";
 import {rootState} from "../../../store/rootReducer";
 import {useAppSelector} from "../../../hooks/useRedux";
-import { useRemoveduplicates } from "../../../hooks/useRemoveduplicates";
+import {useRemoveduplicates} from "../../../hooks/useRemoveduplicates";
 
 export const getProductsObject = (array: any) =>
     array.reduce(
@@ -26,20 +26,14 @@ export const HeaderCard = () => {
         return state.getProductReducer
     })
 //
-    const {product, productVariant} = useAppSelector(state => state.getProductInCard)
+    const {productAdd} = useAppSelector(state => state.getProductInCard)
 
-
-    const sortProductInState = useRemoveduplicates(product)
-
-
-
-    console.log(productVariant)
 
     return (
         <HeaderCardStyle>
             <img className="imgHeaderCard" src={cart} alt="cart" onClick={() => setCardActive(!cardActive)}/>
             {
-                sortProductInState.length === 0
+                productAdd.length === 0
                     ?
                     null
                     :
@@ -62,7 +56,7 @@ export const HeaderCard = () => {
                         <h1>Shopping Cart</h1>
                     </div>
                     {
-                        sortProductInState.length === 0
+                        productAdd.length === 0
                             ?
                             <div className="emptyHeaderCard">
                                 <p>Your shopping bag is empty</p>
@@ -77,8 +71,8 @@ export const HeaderCard = () => {
                             </div>
                             :
                             <div>
-                                {sortProductInState.map((item: any)=>
-                                    <div>{item.id}</div>
+                                {productAdd.map((item: any) =>
+                                    <div key={item.id}>{item.id}</div>
                                 )}
                             </div>
                     }

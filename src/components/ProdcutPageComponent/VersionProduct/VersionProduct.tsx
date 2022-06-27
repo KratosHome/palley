@@ -1,10 +1,9 @@
 import {VersionProductStyle} from "./VersionProductStyle";
 import {useState} from "react";
 import {MayButtonForm} from "../../UL/MayButtonForm/MayButtonForm";
-import { useAppDispatch } from "../../../hooks/useRedux";
-import {getProductReducer} from "../../../store/reducer/getProductReducer";
+import {useAppDispatch, useAppSelector} from "../../../hooks/useRedux";
 import {getProductInCard} from "../../../store/reducer/getProductInCard";
-
+import {MayButton} from "../../UL/MayButton/MayButton";
 
 
 type versionProductType = {
@@ -43,13 +42,14 @@ export const VersionProduct: React.FC<versionProductType> = ({productProd, produ
     }
 
 
-
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         dispatch(getProdcut(product))
-        dispatch(getVariant(id))
+        dispatch(getVariant({id, size, product, count}))
     }
 
+
+    const {productAdd} = useAppSelector(state => state.getProductInCard)
 
 
     return (
@@ -71,6 +71,7 @@ export const VersionProduct: React.FC<versionProductType> = ({productProd, produ
                         </div>
                     )}
                 </div>
+
                 <div className="countContainerVersionProduct">
                     <button
                         className="incrementVersionProduct"
@@ -84,9 +85,18 @@ export const VersionProduct: React.FC<versionProductType> = ({productProd, produ
                         disabled={count <= minCount}
                     />
                 </div>
-                <MayButtonForm backgroundColor={"#2dbbf0"} colorText={"white"}>
-                    add to cart
-                </MayButtonForm>
+                {
+                    productAdd.some((item: any) => item.idVariant === id)
+                        ?
+                        <MayButton linkTo={"/card"} backgroundColor={"#2dbbf0"} colorText={"white"}>
+                            go to cart
+                        </MayButton>
+                        :
+                        <MayButtonForm backgroundColor={"#2dbbf0"} colorText={"white"}>
+                            add to cart
+                        </MayButtonForm>
+                }
+
             </form>
         </VersionProductStyle>
     )
