@@ -3,10 +3,10 @@ import {Link} from "react-router-dom";
 import like from "./../../img/icons/like.png";
 import search from "./../../img/icons/search.png";
 import {ProductListIteType} from "./productListItemType";
-import {useEffect, useState} from "react";
+import {memo, useEffect, useState} from "react";
 
 
-export const ProductListIte: React.FC<ProductListIteType> = ({id, name, prise, newPrise, img, page, link}) => {
+const ProductListIte: React.FC<ProductListIteType> = ({id, name, prise, newPrise, img, page, link}) => {
 
     const [sale, setSale] = useState(1)
 
@@ -47,3 +47,5 @@ export const ProductListIte: React.FC<ProductListIteType> = ({id, name, prise, n
         </ProductListIteStyle>
     )
 };
+
+export default memo(ProductListIte);

@@ -1,13 +1,14 @@
 import {MayModalStyle} from "./MayModalStyle";
 import {MayModalType} from "./MayModalType";
 import {CSSTransition} from 'react-transition-group';
+import {memo} from "react";
 
 
-export const MayModal: React.FC<MayModalType> = ({
-                                                     children,
-                                                     visible,
-                                                     setVisible,
-                                                 }) => {
+const MayModal: React.FC<MayModalType> = ({
+                                              children,
+                                              visible,
+                                              setVisible,
+                                          }) => {
 
     return (
         <MayModalStyle>
@@ -39,3 +40,5 @@ export const MayModal: React.FC<MayModalType> = ({
         </MayModalStyle>
     )
 };
+
+export default memo(MayModal);

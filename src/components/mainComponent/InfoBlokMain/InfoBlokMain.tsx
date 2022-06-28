@@ -1,14 +1,14 @@
 import {InfoBlokMainStyle} from "./InfoBlokMainStyle";
 import {InfoBlokMainType} from "./InfoBlokMainType";
-import {MayButton} from "../../UL/MayButton/MayButton";
-import React from "react";
+import MayButton from "../../UL/MayButton/MayButton";
+import React, {memo} from "react";
 
-export const InfoBlokMain: React.FC<InfoBlokMainType> = ({
-                                                             img,
-                                                             h3Text,
-                                                             contentText,
-                                                             buttonText,
-                                                         }) => {
+const InfoBlokMain: React.FC<InfoBlokMainType> = ({
+                                                      img,
+                                                      h3Text,
+                                                      contentText,
+                                                      buttonText,
+                                                  }) => {
     return (
         <InfoBlokMainStyle>
             <img className="InfoBlokMainImg" src={img} alt={h3Text}/>
@@ -28,3 +28,4 @@ export const InfoBlokMain: React.FC<InfoBlokMainType> = ({
         </InfoBlokMainStyle>
     )
 };
+export default memo(InfoBlokMain);

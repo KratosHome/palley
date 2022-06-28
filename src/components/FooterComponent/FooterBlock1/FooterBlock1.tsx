@@ -2,7 +2,7 @@ import {useForm} from "react-hook-form";
 import logo from "../../../img/icons/logo.png";
 import {FormValues} from "./FooterBlock1Type";
 import {FootetBlock1Style} from "./FooterBlock1Style";
-import {MayInput} from "../../UL/MayInput/MayInput";
+import MayInput from "../../UL/MayInput/MayInput";
 import {useEffect, useState} from "react";
 
 

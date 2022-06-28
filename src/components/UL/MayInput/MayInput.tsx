@@ -1,20 +1,20 @@
 import {MayInputStyle} from "./MayInputStyle";
 import {MayInputType} from "./MayInputType";
+import {memo} from "react";
 
 
+const MayInput: React.FC<MayInputType> = ({
+                                              label,
+                                              labelText,
+                                              type,
+                                              register,
+                                              patternValue,
+                                              patternMessage,
+                                              errors,
+                                              mustBeCompleted,
+                                              placeholder,
 
-export const MayInput: React.FC<MayInputType> = ({
-                                                     label,
-                                                     labelText,
-                                                     type,
-                                                     register,
-                                                     patternValue,
-                                                     patternMessage,
-                                                     errors,
-                                                     mustBeCompleted,
-                                                     placeholder,
-
-                                                 }) => {
+                                          }) => {
 
 
     return (
@@ -42,3 +42,5 @@ export const MayInput: React.FC<MayInputType> = ({
         </MayInputStyle>
     )
 };
+
+export default memo(MayInput);

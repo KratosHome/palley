@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 export const HeaderCardStyle = styled.div`
-  max-width: ${props => props.theme.media.desktop};
 
   .imgHeaderCard {
     cursor: pointer;

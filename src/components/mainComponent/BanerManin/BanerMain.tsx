@@ -4,7 +4,7 @@ import {collectionFirstServer} from "../../../API/TestServer/banerMainServer";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./BanerMain.css"
-import {BanerMainContent} from "./BanerMainContent/BanerMainContent";
+import BanerMainContent from "./BanerMainContent/BanerMainContent";
 
 
 export const BanerMain = () => {

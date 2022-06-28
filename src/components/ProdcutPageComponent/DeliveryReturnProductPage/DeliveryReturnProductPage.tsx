@@ -1,9 +1,9 @@
 import {DeliveryReturnProductPageStyle} from "./DeliveryReturnProductPageStyle";
 import {useState} from "react";
-import {MayModal} from "../../UL/MayModal/MayModal";
+import MayModal from "../../UL/MayModal/MayModal";
 
 
-export const DeliveryReturnProductPage: React.FC<{}> = () => {
+export const DeliveryReturnProductPage = () => {
 
     const [visible, setVisible] = useState(false)
     return (
@@ -28,8 +28,8 @@ export const DeliveryReturnProductPage: React.FC<{}> = () => {
                     <p> All sale items are final purchases.</p>
                     <h3>Help</h3>
                     <p>Give us a shout if you have any other questions and/or concerns.</p>
-                    <p>Email:  <a href="mailto:OlegonTkach101@gmail.com" > OlegonTkach101@gmail.com</a> </p>
-                    <p> Phone: <a href="tel:+380630210567" > +380630210567</a></p>
+                    <p>Email: <a href="mailto:OlegonTkach101@gmail.com"> OlegonTkach101@gmail.com</a></p>
+                    <p> Phone: <a href="tel:+380630210567"> +380630210567</a></p>
                 </>
             </MayModal>
         </DeliveryReturnProductPageStyle>

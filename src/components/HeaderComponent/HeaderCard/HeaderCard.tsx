@@ -3,29 +3,14 @@ import React, {useState} from "react";
 import cart from "../../../img/icons/cart.png";
 import {CSSTransition} from 'react-transition-group';
 import "./HeaderCard.css"
-import {MayButton} from "../../UL/MayButton/MayButton";
-import {useSelector} from "react-redux";
-import {rootState} from "../../../store/rootReducer";
+import MayButton from "../../UL/MayButton/MayButton";
 import {useAppSelector} from "../../../hooks/useRedux";
-import {useRemoveduplicates} from "../../../hooks/useRemoveduplicates";
+import HeaderCartAdd from "../HeaderCartAdd/HeaderCartAdd";
 
-export const getProductsObject = (array: any) =>
-    array.reduce(
-        (objekt: any, product: any) => ({
-            ...objekt,
-            [product.id]: product,
-        }),
-        {}
-    );
 
 export const HeaderCard = () => {
-
     const [cardActive, setCardActive] = useState(false)
 
-    const state = useSelector((state: rootState) => {
-        return state.getProductReducer
-    })
-//
     const {productAdd} = useAppSelector(state => state.getProductInCard)
 
 
@@ -44,6 +29,7 @@ export const HeaderCard = () => {
                 timeout={200}
                 classNames="alert"
                 unmountOnExit
+                mountOnEnter
             >
                 <div className="containerHeaderCard">
                     <div className="titleHeaderCard">
@@ -70,11 +56,7 @@ export const HeaderCard = () => {
                                 </MayButton>
                             </div>
                             :
-                            <div>
-                                {productAdd.map((item: any) =>
-                                    <div key={item.id}>{item.id}</div>
-                                )}
-                            </div>
+                            <HeaderCartAdd productAdd={productAdd}/>
                     }
                 </div>
             </CSSTransition>

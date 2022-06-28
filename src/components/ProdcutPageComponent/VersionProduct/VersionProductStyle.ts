@@ -4,7 +4,6 @@ export const VersionProductStyle = styled.div`
   margin-top: 25px;
   display: flex;
 
-
   .variantContainerVersionProduct {
     display: flex;
   }
@@ -110,14 +109,48 @@ export const VersionProductStyle = styled.div`
   }
 
   .decrementVersionProduct:hover,
-  .incrementVersionProduct:hover{
+  .incrementVersionProduct:hover {
     color: ${props => props.theme.colors.backgroundButton};
     cursor: pointer;
     transition: 500ms;
   }
 
+  .containerButtonVersionProduct {
+    margin-left: 30px;
+    margin-top: -45px;
+    width: 200px;
 
+    button {
+      width: 200px;
+    }
+  }
 
+  @media (max-width: 3500px) {
+    .containerButtonVersionProduct {
+      button {
+        width: 30vw;
+      }
+    }
 
+    @media (max-width: 1800px) {
+      .containerButtonVersionProduct {
+        button {
+          width: 35vw;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .containerButtonVersionProduct {
+          button {
+            width: 85vw;
+          }
+        }
+
+        @media (max-width: 625px) {
+          .containerButtonVersionProduct {
+            button {
+              width: 80vw;
+            }
+          }
 
 `

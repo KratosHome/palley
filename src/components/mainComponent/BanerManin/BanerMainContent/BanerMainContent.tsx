@@ -1,9 +1,10 @@
 import {BanerMainContentStyle} from "./BanerMainContentStyle";
 import {BanerMainContentType} from "./BanerMainContentType";
 import {Link} from "react-router-dom";
+import {memo} from "react";
 
 
-export const BanerMainContent: React.FC<BanerMainContentType> = ({name, prise, path}) => {
+const BanerMainContent: React.FC<BanerMainContentType> = ({name, prise, path}) => {
     return (
         <BanerMainContentStyle>
             <h1 className="BanerMainContentH1">{name}</h1>
@@ -18,3 +19,4 @@ export const BanerMainContent: React.FC<BanerMainContentType> = ({name, prise, p
     )
 };
 
+export default memo(BanerMainContent);

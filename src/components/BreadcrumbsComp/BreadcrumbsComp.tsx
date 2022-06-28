@@ -1,18 +1,19 @@
 import {Link} from "react-router-dom";
 import useBreadcrumbs from 'use-react-router-breadcrumbs';
 import {BreadcrumbsCompStyle} from "./BreadcrumbsCompStyle";
+import {memo} from "react";
 
-export const BreadcrumbsComp: React.FC<{}> = () => {
-
+const BreadcrumbsComp = () => {
     const breadcrumbs = useBreadcrumbs();
-
     return (
         <BreadcrumbsCompStyle>
             {breadcrumbs.map(({match, breadcrumb}) =>
-                    <Link to={match.pathname} key={match.pathname} >
-                        {breadcrumb}
-                    </Link>
+                <Link to={match.pathname} key={match.pathname}>
+                    {breadcrumb}
+                </Link>
             )}
         </BreadcrumbsCompStyle>
     );
 };
+
+export default memo(BreadcrumbsComp);

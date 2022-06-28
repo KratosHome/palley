@@ -1,9 +1,9 @@
 import {SizeGuideMoadalProductPageStyle} from "./SizeGuideMoadalProductPageStyle";
-import {MayModal} from "../../UL/MayModal/MayModal";
+import MayModal from "../../UL/MayModal/MayModal";
 import {useState} from "react";
 import {CSSTransition} from "react-transition-group";
 
-export const SizeGuideMoadalProductPage: React.FC<{}> = () => {
+export const SizeGuideMoadalProductPage = () => {
 
     const [visible, setVisible] = useState(false)
     const [tab, setTab] = useState(1);

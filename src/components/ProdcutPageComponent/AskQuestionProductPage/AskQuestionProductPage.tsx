@@ -1,7 +1,7 @@
 import {AskQuestionProductPageStyle} from "./AskQuestionProductPageStyle";
 import {useEffect, useState} from "react";
-import {MayModal} from "../../UL/MayModal/MayModal";
-import {MayInput} from "../../UL/MayInput/MayInput";
+import MayModal from "../../UL/MayModal/MayModal";
+import MayInput from "../../UL/MayInput/MayInput";
 import {useForm} from "react-hook-form";
 import {FormValues} from "../../FooterComponent/FooterBlock1/FooterBlock1Type";
 import {
@@ -9,7 +9,7 @@ import {
     nameRegularExpressions,
     phoneRegularExpressions
 } from "../../regularExpression/regularExpression";
-import {MayButtonForm} from "../../UL/MayButtonForm/MayButtonForm";
+import MayButtonForm from "../../UL/MayButtonForm/MayButtonForm";
 
 export const AskQuestionProductPage = () => {
 

@@ -1,7 +1,8 @@
 import {MayButtonFormType} from "./MayButtonFormType";
 import {MayButtonFormStyle} from "./MayButtonFormStyle";
+import {memo} from "react";
 
-export const MayButtonForm: React.FC<MayButtonFormType> = ({children, onClick, backgroundColor, colorText,}) => {
+const MayButtonForm: React.FC<MayButtonFormType> = ({children, onClick, backgroundColor, colorText,}) => {
     return (
         <MayButtonFormStyle
             onClick={onClick}
@@ -12,3 +13,4 @@ export const MayButtonForm: React.FC<MayButtonFormType> = ({children, onClick, b
         </MayButtonFormStyle>
     )
 };
+export default memo(MayButtonForm);

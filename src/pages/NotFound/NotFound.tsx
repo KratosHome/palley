@@ -1,7 +1,7 @@
 import {NotFoundStyle} from "./NotFoundStyle"
 import {Link} from "react-router-dom";
 
-export const NotFound: React.FC<{}> = () => {
+export const NotFound = () => {
     return (
         <NotFoundStyle>
             <h1>404</h1>

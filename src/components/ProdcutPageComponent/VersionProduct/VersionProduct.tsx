@@ -1,9 +1,10 @@
 import {VersionProductStyle} from "./VersionProductStyle";
-import {useState} from "react";
-import {MayButtonForm} from "../../UL/MayButtonForm/MayButtonForm";
+import {memo, useState} from "react";
+import MayButtonForm from "../../UL/MayButtonForm/MayButtonForm";
 import {useAppDispatch, useAppSelector} from "../../../hooks/useRedux";
 import {getProductInCard} from "../../../store/reducer/getProductInCard";
-import {MayButton} from "../../UL/MayButton/MayButton";
+import MayButton from "../../UL/MayButton/MayButton";
+import ByuItNowProductPage from "../ByuItNowProductPage/ByuItNowProductPage";
 
 
 type versionProductType = {
@@ -11,7 +12,7 @@ type versionProductType = {
     product: any
     idVariant: any
 }
-export const VersionProduct: React.FC<versionProductType> = ({productProd, product, idVariant}) => {
+const VersionProduct = memo<versionProductType>(({productProd, product, idVariant}) => {
 
     const [size, setSize] = useState(productProd[0].size)
     const [id, setId] = useState(productProd[0].id)
@@ -71,7 +72,6 @@ export const VersionProduct: React.FC<versionProductType> = ({productProd, produ
                         </div>
                     )}
                 </div>
-
                 <div className="countContainerVersionProduct">
                     <button
                         className="incrementVersionProduct"
@@ -88,16 +88,21 @@ export const VersionProduct: React.FC<versionProductType> = ({productProd, produ
                 {
                     productAdd.some((item: any) => item.idVariant === id)
                         ?
-                        <MayButton linkTo={"/card"} backgroundColor={"#2dbbf0"} colorText={"white"}>
-                            go to cart
-                        </MayButton>
+                        <div className="containerButtonVersionProduct">
+                            <MayButton linkTo={"/card"} backgroundColor={"#2dbbf0"} colorText={"white"}>
+                                go to cart
+                            </MayButton>
+                        </div>
                         :
-                        <MayButtonForm backgroundColor={"#2dbbf0"} colorText={"white"}>
-                            add to cart
-                        </MayButtonForm>
+                        <div className="containerButtonVersionProduct">
+                            <MayButtonForm backgroundColor={"#2dbbf0"} colorText={"white"}>
+                                add to cart
+                            </MayButtonForm>
+                        </div>
                 }
-
+                <ByuItNowProductPage/>
             </form>
         </VersionProductStyle>
     )
-};
+});
+export {VersionProduct}

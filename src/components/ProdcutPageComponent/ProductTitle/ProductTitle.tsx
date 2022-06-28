@@ -1,9 +1,10 @@
 import Rating from "@mui/material/Rating";
 import {ProductTitleType} from "./ProductTitleType";
 import {ProductTitleStyle} from "./ProductTitleStyle";
+import {memo} from "react";
 
 
-export const ProductTitle: React.FC<ProductTitleType> = ({name, prise, newPrise, grade}) => {
+const ProductTitle: React.FC<ProductTitleType> = ({name, prise, newPrise, grade}) => {
     return (
         <ProductTitleStyle>
             <h1>{name}</h1>
@@ -30,3 +31,5 @@ export const ProductTitle: React.FC<ProductTitleType> = ({name, prise, newPrise,
         </ProductTitleStyle>
     )
 };
+
+export default memo(ProductTitle);

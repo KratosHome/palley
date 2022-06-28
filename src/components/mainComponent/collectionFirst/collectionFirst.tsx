@@ -4,13 +4,15 @@ import {Pagination, Autoplay, Navigation} from "swiper";
 import {useWindowSize} from "../../../hooks/useWindowSize";
 import {Link} from "react-router-dom";
 import {CollectionFirstType} from "./CollectionFirstType";
+import {memo} from "react";
 
 
-export const CollectionFirst: React.FC<CollectionFirstType> = ({
-                                                                   collection
-                                                               }) => {
+const CollectionFirst: React.FC<CollectionFirstType> = ({
+                                                            collection
+                                                        }) => {
     const [width] = useWindowSize();
-     function quantityImg(){
+
+    function quantityImg() {
         let responsive = 4
         if (+width <= 640) {
             responsive = 1
@@ -59,3 +61,5 @@ export const CollectionFirst: React.FC<CollectionFirstType> = ({
 
     )
 };
+
+export default memo(CollectionFirst);

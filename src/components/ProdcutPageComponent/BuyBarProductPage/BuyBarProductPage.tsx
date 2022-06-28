@@ -1,8 +1,9 @@
 import {BuyBarProductPageType} from "./BuyBarProductPageType";
 import {BuyBarProductPageStyle} from "./BuyBarProductPageStyle";
+import {memo} from "react";
 
 
-export const BuyBarProductPage: React.FC<BuyBarProductPageType> = ({remainder}) => {
+const BuyBarProductPage: React.FC<BuyBarProductPageType> = ({remainder}) => {
     const fillerRelativePercentage = remainder / 100 * 200
     return (
         <BuyBarProductPageStyle>
@@ -23,3 +24,4 @@ export const BuyBarProductPage: React.FC<BuyBarProductPageType> = ({remainder}) 
         </BuyBarProductPageStyle>
     )
 };
+export default memo(BuyBarProductPage);

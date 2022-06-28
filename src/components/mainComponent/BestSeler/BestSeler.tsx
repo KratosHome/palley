@@ -1,9 +1,10 @@
 import {BestSelerStyles} from "./BestSelerStyles";
-import {ProductListIte} from "../../ProductListIte/ProductListIte";
+import ProductListIte from "../../ProductListIte/ProductListIte";
 import {BestSelerType} from "./BestSelerType";
+import {memo} from "react";
 
 
-export const BestSeler: React.FC<BestSelerType> = ({h3, text, products}) => {
+const BestSeler: React.FC<BestSelerType> = ({h3, text, products}) => {
     return (
         <BestSelerStyles>
             <h3 className="BestSelerH3">{h3}</h3>
@@ -25,3 +26,4 @@ export const BestSeler: React.FC<BestSelerType> = ({h3, text, products}) => {
         </BestSelerStyles>
     )
 };
+export default memo(BestSeler);

@@ -1,31 +1,24 @@
-import {Swiper, SwiperSlide} from "swiper/react";
-import {EffectFlip, Pagination} from "swiper";
 import {ProductImgType} from "./ProductImgType";
-
-import "swiper/css/grid"
-import "swiper/css";
-import "swiper/css/effect-flip";
-import "swiper/css/pagination";
 import {ProductImgStyle} from "./ProductImgStyle";
+import {memo} from "react";
+import {Carousel} from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-
-export const ProductImg: React.FC<ProductImgType> = ({img}) => {
+const ProductImg: React.FC<ProductImgType> = ({img}) => {
     return (
         <ProductImgStyle>
-            <Swiper
-                effect={"flip"}
-                grabCursor={true}
-                pagination={true}
-                navigation={true}
-                modules={[EffectFlip, Pagination]}
-                className="mySwiper"
+            <Carousel
+                emulateTouch={true}
+                infiniteLoop={true}
             >
                 {img.map((item: any) =>
-                    <SwiperSlide key={item}>
-                        <img src={item} alt={item.name} />
-                    </SwiperSlide>
+                    <div>
+                        <img src={item}/>
+                    </div>
                 )}
-            </Swiper>
+            </Carousel>
         </ProductImgStyle>
     )
 };
+
+export default memo(ProductImg);

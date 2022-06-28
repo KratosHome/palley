@@ -1,9 +1,10 @@
 import {BloaListItemStyle} from "./BlogListItemStyle";
 import {BlogListItemType} from "./BlogListItemType";
-import {MayButton} from "../UL/MayButton/MayButton";
+import MayButton from "../UL/MayButton/MayButton";
+import {memo} from "react";
 
 
-export const BlogListItem: React.FC<BlogListItemType> = ({id, title, content, img, revers}) => {
+const BlogListItem: React.FC<BlogListItemType> = ({id, title, content, img, revers}) => {
 
 
     return (
@@ -27,3 +28,5 @@ export const BlogListItem: React.FC<BlogListItemType> = ({id, title, content, im
         </BloaListItemStyle>
     )
 };
+
+export default memo(BlogListItem);
