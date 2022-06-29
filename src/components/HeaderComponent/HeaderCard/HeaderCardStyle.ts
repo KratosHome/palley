@@ -7,27 +7,34 @@ export const HeaderCardStyle = styled.div`
     cursor: pointer;
   }
 
+  .addProdcitImgHeaderCard {
+    margin-top: -10px;
+    margin-left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(134, 182, 234);
+  }
+
   .containerHeaderCard {
-    position: absolute;
-    right: 0;
+    position: fixed;
     top: 0;
-    background-color: white;
-    width: 21em;
-    height: 100vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 2;
   }
 
-  .menuBlureOpen {
-    display: block;
+  .openMenuHeaderCard {
+    background: #f8f5f5;
+    border-radius: 5px;
+    width: 350px;
+    height: 100%;
+    overflow: auto;
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    right: 0;
   }
-
 
   .titleHeaderCard {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -72,12 +79,5 @@ export const HeaderCardStyle = styled.div`
     margin-bottom: 60px;
   }
 
-  .addProdcitImgHeaderCard {
-    margin-top: -10px;
-    margin-left: 15px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgb(134, 182, 234);
-  }
+
 `

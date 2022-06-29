@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const BuyItNowProductPageStyle = styled.div`
 
+  
   .containerButtonBuyItNow {
     margin-top: 20px;
     margin-left: -40px;

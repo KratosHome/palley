@@ -1,25 +1,21 @@
-import React, {memo, useState} from 'react';
-import MayButtonForm from '../../UL/MayButtonForm/MayButtonForm';
-import MayModal from '../../UL/MayModal/MayModal';
+import React, {memo} from 'react';
+import MayButton from '../../UL/MayButton/MayButton';
 import {BuyItNowProductPageStyle} from "./BuyItNowProductPageStyle";
 
+
+
 const ByuItNowProductPage = () => {
-    const [visible, setVisible] = useState(false)
+
     return (
         <BuyItNowProductPageStyle>
             <div className="containerButtonBuyItNow">
-                <MayButtonForm
+                <MayButton
                     backgroundColor={"#000000"}
                     colorText={"white"}
-                    onClick={() => setVisible(!visible)}
+                    linkTo={"card"}
                 >
-                    buy it now
-                </MayButtonForm>
-                <MayModal visible={visible} setVisible={setVisible}>
-                    <div>
-                        fdvsdf
-                    </div>
-                </MayModal>
+                        buy it now
+                </MayButton>
             </div>
         </BuyItNowProductPageStyle>
     );

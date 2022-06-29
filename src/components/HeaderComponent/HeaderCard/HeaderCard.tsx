@@ -24,44 +24,59 @@ export const HeaderCard = () => {
                     :
                     <div className="addProdcitImgHeaderCard"></div>
             }
-            <CSSTransition
-                in={cardActive}
-                timeout={200}
-                classNames="alert"
-                unmountOnExit
-                mountOnEnter
+            <div
+                onClick={() => setCardActive(!cardActive)}
+                className={cardActive ? "containerHeaderCard" : ""}
             >
-                <div className="containerHeaderCard">
-                    <div className="titleHeaderCard">
-                        <div
-                            className="closeHeaderCard"
-                            onClick={() => setCardActive(!cardActive)}
-                        >
-                            x
-                        </div>
-                        <h1>Shopping Cart</h1>
-                    </div>
-                    {
-                        productAdd.length === 0
-                            ?
-                            <div className="emptyHeaderCard">
-                                <p>Your shopping bag is empty</p>
-                                <MayButton
-                                    linkTo={"/"}
-                                    backgroundColor={"black"}
-                                    onClick={() => setCardActive(!cardActive)}
-                                    colorText={"white"}
-                                >
-                                    go to the shop
-                                </MayButton>
+                <CSSTransition
+                    in={cardActive}
+                    timeout={200}
+                    classNames="alert"
+                    unmountOnExit
+                    mountOnEnter
+                >
+                    <div
+                        onClick={(e) => e.stopPropagation()}
+                        className={cardActive ? "openMenuHeaderCard" : ""}
+                    >
+                        <div className="titleHeaderCard">
+                            <div
+                                className="closeHeaderCard"
+                                onClick={() => setCardActive(!cardActive)}
+                            >
+                                x
                             </div>
-                            :
-                            <HeaderCartAdd productAdd={productAdd}/>
-                    }
-                </div>
-            </CSSTransition>
-            <div className={cardActive ? "menuBlureOpen" : ""}
-                 onClick={() => setCardActive(!cardActive)}></div>
+                            <h1>Shopping Cart</h1>
+                        </div>
+                        {
+                            productAdd.length === 0
+                                ?
+                                <div className="emptyHeaderCard">
+                                    <p>Your shopping bag is empty</p>
+                                    <MayButton
+                                        linkTo={"/"}
+                                        backgroundColor={"black"}
+                                        onClick={() => setCardActive(!cardActive)}
+                                        colorText={"white"}
+                                    >
+                                        go to the shop
+                                    </MayButton>
+                                </div>
+                                :
+                                <HeaderCartAdd productAdd={productAdd} setCardActive/>
+                        }
+
+                    </div>
+                </CSSTransition>
+            </div>
         </HeaderCardStyle>
     )
 };
+
+/*
+
+
+
+
+
+ */

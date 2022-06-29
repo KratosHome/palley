@@ -32,5 +32,6 @@ export const MayButtonStyle = styled.button<Props>`
     padding: 15px 30px;
     color: ${props => props.colorText};
     display: inline-block;
+    width: 100%;
   }
 `

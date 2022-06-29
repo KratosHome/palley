@@ -12,7 +12,7 @@ const ProductImg: React.FC<ProductImgType> = ({img}) => {
                 infiniteLoop={true}
             >
                 {img.map((item: any) =>
-                    <div>
+                    <div key={item}>
                         <img src={item}/>
                     </div>
                 )}

@@ -18,7 +18,7 @@ export const getProductInCard = createSlice({
     initialState,
     reducers: {
         getProdcut(state: any, action: PayloadAction<any>) {
-              state.productAdd.push(action.payload);
+            state.productAdd.push(action.payload);
         },
         getVariant(state: any, action: PayloadAction<any>) {
             state.productAdd.forEach((element: any) => {
@@ -30,7 +30,7 @@ export const getProductInCard = createSlice({
             });
         },
         deleteProduct: (state: any, action: PayloadAction<any>) => {
-            return state.product.filter((p: any) => p.id !== action.payload.id)
+            state.productAdd = state.productAdd.filter((p: any) => p.idVariant !== action.payload)
         },
 
     },
