@@ -4,7 +4,7 @@ import {HeaderAddStyle} from "./HeaferCartAddStyle";
 import imgDel from "../../../img/icons/delete.png"
 import {useAppDispatch} from "../../../hooks/useRedux";
 import {deleteProduct} from '../../../store/reducer/getProductInCard';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const HeaderCartAdd: React.FC<HeaderAddType> = ({productAdd, setCardActive}) => {
     const dispatch = useAppDispatch()
@@ -16,9 +16,8 @@ const HeaderCartAdd: React.FC<HeaderAddType> = ({productAdd, setCardActive}) => 
     let totalOld = productAdd.reduce((accumulator: any, friend: any) => accumulator + friend.prise, 0)
     let total = productAdd.reduce((accumulator: any, friend: any) => accumulator + friend.newPrise, 0)
 
-    const onClick = (e:any) => {
+    const onClick = (e: any) => {
         setCardActive(false)
-        e.preventDefault()
     }
 
     return (
@@ -63,11 +62,11 @@ const HeaderCartAdd: React.FC<HeaderAddType> = ({productAdd, setCardActive}) => 
                     <span className="totaPriseHeaderCartAdd">${total}</span>
                 </div>
                 <div></div>
-                <div className="buttonContainerHeaderCartAdd" >
-                    <Link to={"/card"} className="viewHeaderCartAdd">view
-                        cart</Link>
-                    <Link to={"/checkout"} className="checkoutHeaderCartAdd">check
-                        out</Link>
+                <div className="buttonContainerHeaderCartAdd">
+                    <NavLink to={"/card"} onClick={() => setCardActive(false)} className="viewHeaderCartAdd">view
+                        cart</NavLink>
+                    <NavLink to={"/checkout"} onClick={() => setCardActive(false)} className="checkoutHeaderCartAdd">check
+                        out</NavLink>
                 </div>
             </div>
         </HeaderAddStyle>

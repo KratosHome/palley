@@ -52,6 +52,9 @@ export const FooterBlock1 = () => {
                     errors={errors}
                     mustBeCompleted={false}
                     formSent={getEmail}
+                    borderRadius={"0"}
+                    border={"unset"}
+                    backgroundColor={"#f4f4f4;"}
                 />
                 <button className="FooterBlock1Button">
                     <svg

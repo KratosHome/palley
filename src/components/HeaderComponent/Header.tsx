@@ -10,7 +10,6 @@ import {HeaderCard} from "./HeaderCard/HeaderCard";
 
 
 export const Header = () => {
-
     return (
         <>
             <HeaderStyles>

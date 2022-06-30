@@ -63,9 +63,8 @@ export const HeaderCard = () => {
                                     </MayButton>
                                 </div>
                                 :
-                                <HeaderCartAdd productAdd={productAdd} setCardActive/>
+                                <HeaderCartAdd productAdd={productAdd} setCardActive={setCardActive}/>
                         }
-
                     </div>
                 </CSSTransition>
             </div>

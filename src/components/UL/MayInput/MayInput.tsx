@@ -13,11 +13,18 @@ const MayInput: React.FC<MayInputType> = ({
                                               errors,
                                               mustBeCompleted,
                                               placeholder,
+                                              borderRadius,
+                                              border,
+                                              backgroundColor
                                           }) => {
 
 
     return (
-        <MayInputStyle>
+        <MayInputStyle
+            borderRadius={borderRadius}
+            border={border}
+            backgroundColor={backgroundColor}
+        >
             <label
                 htmlFor={label}
             >

@@ -61,6 +61,9 @@ export const AskQuestionProductPage = () => {
                         patternValue={nameRegularExpressions}
                         patternMessage={"Enter your Nam"}
                         errors={errors}
+                        borderRadius={"0"}
+                        border={"unset"}
+                        backgroundColor={"#f4f4f4;"}
                     />
                     <MayInput
                         label={"Your Email"}
@@ -73,6 +76,9 @@ export const AskQuestionProductPage = () => {
                         patternValue={emailRegularExpressions}
                         patternMessage={"Enter your Email correctly"}
                         errors={errors}
+                        borderRadius={"0"}
+                        border={"unset"}
+                        backgroundColor={"#f4f4f4;"}
                     />
                     <MayInput
                         label={"Phone Number"}
@@ -85,6 +91,9 @@ export const AskQuestionProductPage = () => {
                         patternValue={phoneRegularExpressions}
                         patternMessage={"Phone Number correctly"}
                         errors={errors}
+                        borderRadius={"0"}
+                        border={"unset"}
+                        backgroundColor={"#f4f4f4;"}
                     />
                     <div className="inputAskMessogeInputProduct">
                         <MayInput
@@ -98,6 +107,9 @@ export const AskQuestionProductPage = () => {
                             patternValue={nameRegularExpressions}
                             patternMessage={"Enter your Message"}
                             errors={errors}
+                            borderRadius={"0"}
+                            border={"unset"}
+                            backgroundColor={"#f4f4f4;"}
                         />
                     </div>
                     <MayButtonForm

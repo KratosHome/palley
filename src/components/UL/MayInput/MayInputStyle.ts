@@ -1,7 +1,13 @@
 import styled from "styled-components";
 
+interface Props {
+    backgroundColor: string
+    borderRadius: string
+    border: string
+}
 
-export const MayInputStyle = styled.div`
+
+export const MayInputStyle = styled.div<Props>`
   display: flex;
   flex-direction: column;
   
@@ -22,10 +28,11 @@ export const MayInputStyle = styled.div`
     max-width: 1000px;
     height: 35px;
     margin-bottom: 10px;
-    border-radius: unset;
-    background: #f4f4f4;
-    border: none;
+    border-radius: ${props => props.borderRadius};
+    border:${props => props.border};
+    background: ${props => props.backgroundColor};
     padding: 15px;
+    margin-right: 5px;
   }
   
 

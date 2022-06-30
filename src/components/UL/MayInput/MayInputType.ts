@@ -10,4 +10,7 @@ export type MayInputType = {
     mustBeCompleted?: boolean
     placeholder?: string
     formSent?: any
+    border: string
+    borderRadius: string
+    backgroundColor: string
 }
