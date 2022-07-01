@@ -217,7 +217,7 @@ export const ProductServer = [
         "newPrise": 65,
         "grade": 4.4,
         "description": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these books, you won’t be able to put them down.",
-        "cart_img": ["/img/product/Thin_Case_For_IPhone.jp"],
+        "cart_img": ["/img/product/Premium_World_Power.jpg"],
         "soldInTwelveHours": 1,
         "remainder": 28,
         "prod": [

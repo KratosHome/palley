@@ -23,9 +23,11 @@ export const ProductPage = () => {
                         ?
                         <NotFound/>
                         :
-                        getProductInProduct.map((item: any) =>
-                            <ProductPageItem key={item.id} item={item}/>
-                        )
+                        <div className="BestSelerContainer">
+                            {getProductInProduct.map((item: any) =>
+                                <ProductPageItem key={item.id} item={item}/>
+                            )}
+                        </div>
             }
         </>
     )
