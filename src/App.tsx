@@ -7,6 +7,7 @@ import {BrowserRouter} from "react-router-dom";
 import {Footer} from "./components/FooterComponent/Footer/Footer";
 import {fetshExchangeRateAction} from "./store/action/getProductAction";
 import {useAppDispatch} from "./hooks/useRedux";
+import UseScrollToTop from "./hooks/useScrolToTop";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 
     return (
         <BrowserRouter>
+            <UseScrollToTop/>
             <GlobalStyle/>
             <Header/>
             <AppRouter/>
