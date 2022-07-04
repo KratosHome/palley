@@ -33,8 +33,16 @@ export const getProductInCard = createSlice({
             state.productAdd = state.productAdd.filter((p: any) => p.idVariant !== action.payload)
         },
 
+        changeCount(state: any, action: PayloadAction<any>) {
+            state.productAdd.forEach((element: any) => {
+                if (element.idVariant === action.payload.id) {
+                    element.count = action.payload.count
+                }
+            })
+        },
+
     },
 })
 
 export default getProductInCard.reducer
-export const {getProdcut, getVariant, deleteProduct} = getProductInCard.actions
+export const {getProdcut, getVariant, deleteProduct, changeCount} = getProductInCard.actions

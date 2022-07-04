@@ -13,6 +13,7 @@ export const MayButtonStyle = styled.button<Props>`
   text-align: center;
   color: #111111;
   border: 1px solid #111111;
+  width: 100%;
 
   font-size: 1em;
   line-height: 1;

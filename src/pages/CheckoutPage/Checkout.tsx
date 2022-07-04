@@ -9,12 +9,13 @@ import {Link} from "react-router-dom";
 import MayButtonForm from "../../components/UL/MayButtonForm/MayButtonForm";
 import {emailRegularExpressions, nameRegularExpressions} from "../../components/regularExpression/regularExpression";
 import MayModal from "../../components/UL/MayModal/MayModal";
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 
 const CheckoutPage = () => {
     const {productAdd} = useAppSelector(state => state.getProductInCard)
-    let total = productAdd.reduce((accumulator: any, friend: any) => accumulator + friend.newPrise, 0)
+    let total = productAdd.reduce((accumulator: any, friend: any) => accumulator + friend.newPrise * friend.count, 0)
+
     let navigate = useNavigate();
     const {
         register,
@@ -184,7 +185,7 @@ const CheckoutPage = () => {
                         />
                     </div>
                     <div className="containerBittonFormCheckoutPage">
-                        <Link to={"/cart"}>
+                        <Link to={"/card"}>
                             Return to cart
                         </Link>
                         <MayButtonForm

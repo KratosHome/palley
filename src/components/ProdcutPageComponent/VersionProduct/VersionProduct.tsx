@@ -4,20 +4,20 @@ import MayButtonForm from "../../UL/MayButtonForm/MayButtonForm";
 import {useAppDispatch, useAppSelector} from "../../../hooks/useRedux";
 import {getProductInCard} from "../../../store/reducer/getProductInCard";
 import MayButton from "../../UL/MayButton/MayButton";
-import ByuItNowProductPage from "../ByuItNowProductPage/ByuItNowProductPage";
+import Quantity from "../../UL/Quantity/Quantity";
 
 
 type versionProductType = {
     productProd: any
     product: any
-    idVariant: any
+
 }
-const VersionProduct = memo<versionProductType>(({productProd, product, idVariant}) => {
+const VersionProduct = memo<versionProductType>(({productProd, product}) => {
 
     const [size, setSize] = useState(productProd[0].size)
     const [id, setId] = useState(productProd[0].id)
-    const [maxCount, setMaxCount] = useState(productProd[0].count)
 
+    let maxCount = productProd[0].count
     const dispatch = useAppDispatch()
     const {getProdcut, getVariant} = getProductInCard.actions
 
@@ -72,19 +72,13 @@ const VersionProduct = memo<versionProductType>(({productProd, product, idVarian
                         </div>
                     )}
                 </div>
-                <div className="countContainerVersionProduct">
-                    <button
-                        className="incrementVersionProduct"
-                        onClick={(e) => ProductIncriment(e)}
-                        disabled={count >= maxCount}
-                    />
-                    <input className="countInputVersionProduct" value={count} readOnly/>
-                    <button
-                        className="decrementVersionProduct"
-                        onClick={(e) => ProducttDecrement(e)}
-                        disabled={count <= minCount}
-                    />
-                </div>
+                <Quantity
+                    ProductIncriment={ProductIncriment}
+                    ProducttDecrement={ProducttDecrement}
+                    count={count}
+                    maxCount={maxCount}
+                    minCount={minCount}
+                />
                 {
                     productAdd.some((item: any) => item.idVariant === id)
                         ?
@@ -100,7 +94,6 @@ const VersionProduct = memo<versionProductType>(({productProd, product, idVarian
                             </MayButtonForm>
                         </div>
                 }
-                <ByuItNowProductPage/>
             </form>
         </VersionProductStyle>
     )

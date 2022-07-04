@@ -3,12 +3,17 @@ import {Main} from "../pages/Main/Main";
 import {NotFound} from "../pages/NotFound/NotFound";
 import {ProductPage} from "../pages/ProductPage/ProductPage";
 import ProductCatalogPage from "../pages/ProductCatalogPage/ProductCatalogPage";
+import ViewCartPage from "../pages/ViewCartPage/ViewCartPage";
 
 export const ProviderRouter: any[] = [
     {path: "/", component: <Main/>},
     {path: "/*", component: <NotFound/>},
     {path: "/checkout", component: <Checkout/>},
+    {path: "/:page/checkout", component: <Checkout/>},
+    {path: "/card", component: <ViewCartPage/>},
     {path: "/products", component: <ProductCatalogPage/>},
     {path: "/:page/:id", component: <ProductPage/>},
+    {path: "/:page/:page/:id", component: <ProductPage/>},
+    {path: "/:page/products/", component: <ProductCatalogPage/>},
     {path: "/:id", component: <ProductPage/>}
 ];

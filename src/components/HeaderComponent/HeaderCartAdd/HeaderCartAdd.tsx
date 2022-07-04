@@ -13,12 +13,9 @@ const HeaderCartAdd: React.FC<HeaderAddType> = ({productAdd, setCardActive}) => 
         dispatch(deleteProduct(item))
     }
 
-    let totalOld = productAdd.reduce((accumulator: any, friend: any) => accumulator + friend.prise, 0)
-    let total = productAdd.reduce((accumulator: any, friend: any) => accumulator + friend.newPrise, 0)
+    let totalOld = productAdd.reduce((accumulator: any, friend: any) => accumulator + friend.prise * friend.count, 0)
+    let total = productAdd.reduce((accumulator: any, friend: any) => accumulator + friend.newPrise * friend.count, 0)
 
-    const onClick = (e: any) => {
-        setCardActive(false)
-    }
 
     return (
         <HeaderAddStyle>
