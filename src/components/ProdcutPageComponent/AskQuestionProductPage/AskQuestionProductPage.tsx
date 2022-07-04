@@ -31,7 +31,6 @@ export const AskQuestionProductPage = () => {
 
 
     const [show, setShow] = useState(true);
-
     const [getEmail, setGetEmail] = useState({})
     useEffect(() => {
         if (Object.keys(getEmail).length) {
@@ -40,7 +39,7 @@ export const AskQuestionProductPage = () => {
                 setShow(false);
             }, 1000);
         }
-    }, [getEmail])
+    }, [getEmail, show])
 
     return (
         <AskQuestionProductPageStyle>

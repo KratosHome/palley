@@ -13,7 +13,7 @@ const ProductImg: React.FC<ProductImgType> = ({img}) => {
             >
                 {img.map((item: any) =>
                     <div key={item}>
-                        <img src={item}/>
+                        <img src={item} alt={item}/>
                     </div>
                 )}
             </Carousel>

@@ -1,5 +1,3 @@
-
-import {productTypes} from "../../types/productTypes";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
 

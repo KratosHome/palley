@@ -40,7 +40,7 @@ const CheckoutPage = () => {
                 navigate("/")
             }, 1000);
         }
-    }, [getEmail])
+    }, [getEmail, show])
     return (
         <CheckoutPageStyle>
             <div className="containerChekCheckoutPage">
