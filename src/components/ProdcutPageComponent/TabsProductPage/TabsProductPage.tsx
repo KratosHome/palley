@@ -11,9 +11,10 @@ type tabsProductPageType = {
     productDiteils: any
     sizeFit: any
     aboutMe: any
+    img: any
 }
 
-const TabsProductPage = memo<tabsProductPageType>(({discription, brand, productDiteils, sizeFit, aboutMe}) => {
+const TabsProductPage = memo<tabsProductPageType>(({discription, brand, productDiteils, sizeFit, aboutMe, img}) => {
 
     const [post, setPost] = useState({
         grade: 3,
@@ -58,7 +59,7 @@ const TabsProductPage = memo<tabsProductPageType>(({discription, brand, productD
                 />
             </CSSTransition>
             <CSSTransition in={tab === 2} classNames="alert" timeout={300} unmountOnExit>
-                <AdditionalInfoProductPage/>
+                <AdditionalInfoProductPage img={img}/>
             </CSSTransition>
             <CSSTransition in={tab === 3} classNames="alert" timeout={300} unmountOnExit>
                 <TabsProductDiscription

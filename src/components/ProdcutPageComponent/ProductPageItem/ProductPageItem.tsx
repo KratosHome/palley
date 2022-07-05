@@ -48,6 +48,7 @@ const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
                     productDiteils={item.product_details}
                     sizeFit={item.size_fit}
                     aboutMe={item.about_me}
+                    img={item.cart_img[0]}
                 />
             </div>
         </ProductPageItemStyle>
