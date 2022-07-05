@@ -48,7 +48,10 @@ const VersionProduct = memo<versionProductType>(({productProd, product}) => {
         dispatch(getProdcut(product))
         dispatch(getVariant({id, size, product, count}))
     }
-
+    const onClickBuyItNow = () => {
+        dispatch(getProdcut(product))
+        dispatch(getVariant({id, size, product, count}))
+    }
 
     const {productAdd} = useAppSelector(state => state.getProductInCard)
 
@@ -94,6 +97,12 @@ const VersionProduct = memo<versionProductType>(({productProd, product}) => {
                             </MayButtonForm>
                         </div>
                 }
+                <div className="buyItNowVersionProduct">
+                    <MayButton backgroundColor={"#000000"} colorText={"white"} linkTo={"/checkout"}
+                               onClick={onClickBuyItNow}>
+                        BUY IT NOW
+                    </MayButton>
+                </div>
             </form>
         </VersionProductStyle>
     )

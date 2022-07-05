@@ -67,32 +67,39 @@ export const VersionProductStyle = styled.div`
     }
   }
 
-  @media (max-width: 3500px) {
+  .buyItNowVersionProduct {
+    margin-top: 1rem;
+    margin-left: -2.4rem;
+    width: 300px;
+  }
+}
+
+@media (max-width: 3500px) {
+  .containerButtonVersionProduct {
+    button {
+      width: 30vw;
+    }
+  }
+
+  @media (max-width: 1800px) {
     .containerButtonVersionProduct {
       button {
-        width: 30vw;
+        width: 35vw;
       }
     }
 
-    @media (max-width: 1800px) {
+    @media (max-width: 760px) {
       .containerButtonVersionProduct {
         button {
-          width: 35vw;
+          width: 85vw;
         }
       }
 
-      @media (max-width: 760px) {
+      @media (max-width: 625px) {
         .containerButtonVersionProduct {
           button {
-            width: 85vw;
+            width: 80vw;
           }
         }
-
-        @media (max-width: 625px) {
-          .containerButtonVersionProduct {
-            button {
-              width: 80vw;
-            }
-          }
 
 `
