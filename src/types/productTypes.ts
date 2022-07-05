@@ -10,4 +10,8 @@ export type productTypes = {
     soldInTwelveHours: number;
     remainder: number;
     prod: any[];
+    brand_discription: any
+    product_details: any
+    size_fit: any
+    about_me: any
 }

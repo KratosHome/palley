@@ -11,14 +11,21 @@ export const ProductPageItemStyle = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  .gridBoxProductPageItem {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
   .addToWidhList {
     position: absolute;
     font-size: 18px;
     top: 30%;
     right: 25%;
   }
-  
-  .descriptionProductPageItem{
+
+  .descriptionProductPageItem {
     font-family: MyFont6;
     font-size: 1rem;
     color: #969696;
@@ -40,6 +47,7 @@ export const ProductPageItemStyle = styled.div`
     font-weight: 600;
     color: ${props => props.theme.colors.backgroundButton};
   }
+
   .modalContainerProductPage {
     margin-top: 2rem;
     font-family: MyFont1;
@@ -48,12 +56,21 @@ export const ProductPageItemStyle = styled.div`
     font-weight: bold;
     color: black;
   }
-  
-    
+
+
   @media ${props => props.theme.media.phone} {
-    .modalContainerProductPage{
+    grid-template-columns: 1fr;
+    
+    .gridBoxProductPageItem {
+      grid-column-start: 0;
+      grid-column-end: 1;
+      grid-row-start: 4;
+      grid-row-end: 0;
+    }
+
+    .modalContainerProductPage {
       justify-content: space-around;
     }
-    grid-template-columns: 1fr
+
   }
 `

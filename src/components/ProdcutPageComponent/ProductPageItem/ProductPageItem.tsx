@@ -9,6 +9,8 @@ import {DeliveryReturnProductPage} from "../DeliveryReturnProductPage/DeliveryRe
 import {AskQuestionProductPage} from "../AskQuestionProductPage/AskQuestionProductPage";
 import {VersionProduct} from "../VersionProduct/VersionProduct";
 import {memo} from "react";
+import InfoCheckoutProductPage from "../InfoCheckoutProductPage/InfoCheckoutProductPage";
+import TabsProductPage from "../TabsProductPage/TabsProductPage";
 
 
 const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
@@ -36,9 +38,18 @@ const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
                     <DeliveryReturnProductPage/>
                     <AskQuestionProductPage/>
                 </div>
-                <VersionProduct productProd={item.prod} product={item} />
+                <VersionProduct productProd={item.prod} product={item}/>
             </div>
-            <div>frefwerf</div>
+            <div className="gridBoxProductPageItem">
+                <InfoCheckoutProductPage/>
+                <TabsProductPage
+                    discription={item.description}
+                    brand={item.brand_discription}
+                    productDiteils={item.product_details}
+                    sizeFit={item.size_fit}
+                    aboutMe={item.about_me}
+                />
+            </div>
         </ProductPageItemStyle>
     )
 };

@@ -32,7 +32,26 @@ export const ProductServer = [
                 "newPrise": 50,
                 "count": 30
             }
-        ]
+        ],
+        "review": [
+            {
+                "id": 1,
+                "name": "Dubrav",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 5
+            },
+            {
+                "id": 2,
+                "name": "Valintin",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 3
+            }
+        ],
+        "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
+        "product_details": ["You show me what is deep as sea", "Crew neck", "Short sleeves", "Large logo print to chest", "Regular fit", "True size"],
+        "size_fit": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
+        "about_me": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
+        "brand_discription": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book."
     },
     {
         "id": "2",
@@ -67,7 +86,26 @@ export const ProductServer = [
                 "newPrise": 50,
                 "count": 30
             }
-        ]
+        ],
+        "review": [
+            {
+                "id": 1,
+                "name": "Dubrav",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 5
+            },
+            {
+                "id": 2,
+                "name": "Valintin",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 3
+            }
+        ],
+        "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
+        "product_details": ["You show me what is deep as sea", "Crew neck", "Short sleeves", "Large logo print to chest", "Regular fit", "True size"],
+        "size_fit": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
+        "about_me": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
+        "brand_discription": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book."
     },
     {
         "id": "3",
@@ -102,7 +140,26 @@ export const ProductServer = [
                 "newPrise": 50,
                 "count": 30
             }
-        ]
+        ],
+        "review": [
+            {
+                "id": 1,
+                "name": "Dubrav",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 5
+            },
+            {
+                "id": 2,
+                "name": "Valintin",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 3
+            }
+        ],
+        "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
+        "product_details": ["You show me what is deep as sea", "Crew neck", "Short sleeves", "Large logo print to chest", "Regular fit", "True size"],
+        "size_fit": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
+        "about_me": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
+        "brand_discription": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book."
     },
     {
         "id": "4",
@@ -137,7 +194,26 @@ export const ProductServer = [
                 "newPrise": 50,
                 "count": 30
             }
-        ]
+        ],
+        "review": [
+            {
+                "id": 1,
+                "name": "Dubrav",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 5
+            },
+            {
+                "id": 2,
+                "name": "Valintin",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 3
+            }
+        ],
+        "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
+        "product_details": ["You show me what is deep as sea", "Crew neck", "Short sleeves", "Large logo print to chest", "Regular fit", "True size"],
+        "size_fit": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
+        "about_me": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
+        "brand_discription": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book."
     },
     {
         "id": "5",
@@ -172,7 +248,26 @@ export const ProductServer = [
                 "newPrise": 50,
                 "count": 30
             }
-        ]
+        ],
+        "review": [
+            {
+                "id": 1,
+                "name": "Dubrav",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 5
+            },
+            {
+                "id": 2,
+                "name": "Valintin",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 3
+            }
+        ],
+        "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
+        "product_details": ["You show me what is deep as sea", "Crew neck", "Short sleeves", "Large logo print to chest", "Regular fit", "True size"],
+        "size_fit": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
+        "about_me": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
+        "brand_discription": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book."
     },
     {
         "id": "6",
@@ -207,7 +302,26 @@ export const ProductServer = [
                 "newPrise": 50,
                 "count": 30
             }
-        ]
+        ],
+        "review": [
+            {
+                "id": 1,
+                "name": "Dubrav",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 5
+            },
+            {
+                "id": 2,
+                "name": "Valintin",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 3
+            }
+        ],
+        "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
+        "product_details": ["You show me what is deep as sea", "Crew neck", "Short sleeves", "Large logo print to chest", "Regular fit", "True size"],
+        "size_fit": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
+        "about_me": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
+        "brand_discription": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book."
     },
     {
         "id": "7",
@@ -242,7 +356,26 @@ export const ProductServer = [
                 "newPrise": 50,
                 "count": 30
             }
-        ]
+        ],
+        "review": [
+            {
+                "id": 1,
+                "name": "Dubrav",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 5
+            },
+            {
+                "id": 2,
+                "name": "Valintin",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 3
+            }
+        ],
+        "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
+        "product_details": ["You show me what is deep as sea", "Crew neck", "Short sleeves", "Large logo print to chest", "Regular fit", "True size"],
+        "size_fit": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
+        "about_me": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
+        "brand_discription": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book."
     },
     {
         "id": "8",
@@ -277,7 +410,26 @@ export const ProductServer = [
                 "newPrise": 50,
                 "count": 30
             }
-        ]
+        ],
+        "review": [
+            {
+                "id": 1,
+                "name": "Dubrav",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 5
+            },
+            {
+                "id": 2,
+                "name": "Valintin",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 3
+            }
+        ],
+        "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
+        "product_details": ["You show me what is deep as sea", "Crew neck", "Short sleeves", "Large logo print to chest", "Regular fit", "True size"],
+        "size_fit": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
+        "about_me": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
+        "brand_discription": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book."
     },
     {
         "id": "9",
@@ -311,6 +463,25 @@ export const ProductServer = [
                 "newPrise": 50,
                 "count": 30
             }
-        ]
+        ],
+        "review": [
+            {
+                "id": 1,
+                "name": "Dubrav",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 5
+            },
+            {
+                "id": 2,
+                "name": "Valintin",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 3
+            }
+        ],
+        "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
+        "product_details": ["You show me what is deep as sea", "Crew neck", "Short sleeves", "Large logo print to chest", "Regular fit", "True size"],
+        "size_fit": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
+        "about_me": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
+        "brand_discription": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book."
     }
 ]
