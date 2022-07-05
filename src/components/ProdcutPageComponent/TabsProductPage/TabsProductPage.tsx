@@ -16,12 +16,6 @@ type tabsProductPageType = {
 
 const TabsProductPage = memo<tabsProductPageType>(({discription, brand, productDiteils, sizeFit, aboutMe, img}) => {
 
-    const [post, setPost] = useState({
-        grade: 3,
-        email: "",
-        name: "",
-        text: ""
-    })
 
     const [tab, setTab] = useState(1);
 
