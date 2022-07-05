@@ -26,15 +26,15 @@ const AdditionalInfoProductPage = memo<AdditionalInfoProductPageType>(({img}) =>
                     <li>Easy To Order</li>
                 </ul>
             </div>
-            <div className="">
+            <div className="ulAdditionalInfoProductPageType">
+                <h6>Express Delivery</h6>
                 <ul>
-                    <h6>Express Delivery</h6>
                     <li>Europe & USA within 2-4 days</li>
                     <li>Rest of the world within 3-7 days</li>
                     <li>Selected locations</li>
                 </ul>
+                <h6>Need More Information</h6>
                 <ul>
-                    <h6>Need More Information</h6>
                     <li>Orders & Shipping</li>
                     <li>Returns & Refunds</li>
                     <li>Payments</li>
