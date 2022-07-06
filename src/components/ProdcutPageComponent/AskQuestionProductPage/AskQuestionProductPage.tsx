@@ -44,7 +44,7 @@ export const AskQuestionProductPage = () => {
     return (
         <AskQuestionProductPageStyle>
             <div onClick={() => setVisible(true)} className="titelModal">
-                Size guide
+                Ask a Question
             </div>
             <MayModal visible={visible} setVisible={setVisible}>
                 <form onSubmit={onSubmit}>

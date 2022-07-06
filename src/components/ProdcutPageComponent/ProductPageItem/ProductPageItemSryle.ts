@@ -57,10 +57,51 @@ export const ProductPageItemStyle = styled.div`
     color: black;
   }
 
+  .socialNetworkProductPageItem {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+
+    a {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      color: black;
+      transition: 500ms;
+      border: 1px solid rgba(0,0,0,0.3);
+      border-radius: 50px;
+      width: 30px;
+      height: 30px;
+      padding-top: 7px;
+
+    }
+
+    a:hover {
+      background-color: ${props => props.theme.colors.backgroundButton};
+      color: white;
+      border: 1px solid ${props => props.theme.colors.backgroundButton};;
+    }
+  }
+
+  .socialNetworkProductPageItem:after,
+  .socialNetworkProductPageItem:before {
+    margin-top: -10px;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.2);
+  }
+
+  .socialNetworkProductPageItem:after {
+    margin-top: 40px;
+  }
 
   @media ${props => props.theme.media.phone} {
     grid-template-columns: 1fr;
-    
+
     .gridBoxProductPageItem {
       grid-column-start: 0;
       grid-column-end: 1;

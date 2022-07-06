@@ -11,7 +11,12 @@ import {VersionProduct} from "../VersionProduct/VersionProduct";
 import {memo} from "react";
 import InfoCheckoutProductPage from "../InfoCheckoutProductPage/InfoCheckoutProductPage";
 import TabsProductPage from "../TabsProductPage/TabsProductPage";
-
+import {FaTwitter} from "react-icons/fa";
+import {FaFacebookSquare} from "react-icons/fa";
+import {FaInstagram} from "react-icons/fa";
+import BestSeler from "../../mainComponent/BestSeler/BestSeler";
+import {bestSelerServer} from "../../../API/TestServer/bestSelerServer";
+import {hotDealServer} from "../../../API/TestServer/hotDellServer";
 
 const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
     return (
@@ -50,6 +55,22 @@ const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
                     aboutMe={item.about_me}
                     img={item.cart_img[0]}
                     reviews={item.review}
+                />
+                <div className="socialNetworkProductPageItem">
+                    <a href="https://www.facebook.com/">
+                        <FaTwitter/>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <FaFacebookSquare/>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <FaInstagram/>
+                    </a>
+                </div>
+                <BestSeler
+                    h3="RELATED PRODUCTS"
+                    text=""
+                    products={hotDealServer}
                 />
             </div>
         </ProductPageItemStyle>
