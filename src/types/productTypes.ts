@@ -14,4 +14,5 @@ export type productTypes = {
     product_details: any
     size_fit: any
     about_me: any
+    review: any
 }

@@ -3,6 +3,7 @@ import {TabsProductPageStyle} from "./TabsProductPageStyle";
 import {CSSTransition} from "react-transition-group";
 import TabsProductDiscription from "../TabsProductDiscription/TabsProductDiscription";
 import AdditionalInfoProductPage from "../AdditionalInfoProductPage/AdditionalInfoProductPage";
+import ReviewProductPage from "../ReviewProductPage/ReviewProductPage";
 
 
 type tabsProductPageType = {
@@ -12,13 +13,20 @@ type tabsProductPageType = {
     sizeFit: any
     aboutMe: any
     img: any
+    reviews: any
 }
 
-const TabsProductPage = memo<tabsProductPageType>(({discription, brand, productDiteils, sizeFit, aboutMe, img}) => {
-
+const TabsProductPage = memo<tabsProductPageType>(({
+                                                       discription,
+                                                       brand,
+                                                       productDiteils,
+                                                       sizeFit,
+                                                       aboutMe,
+                                                       img,
+                                                       reviews
+                                                   }) => {
 
     const [tab, setTab] = useState(1);
-
 
     return (
         <TabsProductPageStyle>
@@ -56,13 +64,7 @@ const TabsProductPage = memo<tabsProductPageType>(({discription, brand, productD
                 <AdditionalInfoProductPage img={img}/>
             </CSSTransition>
             <CSSTransition in={tab === 3} classNames="alert" timeout={300} unmountOnExit>
-                <TabsProductDiscription
-                    discription={discription}
-                    brand={brand}
-                    productDiteils={productDiteils}
-                    sizeFit={sizeFit}
-                    aboutMe={aboutMe}
-                />
+                <ReviewProductPage review={reviews}/>
             </CSSTransition>
 
         </TabsProductPageStyle>
