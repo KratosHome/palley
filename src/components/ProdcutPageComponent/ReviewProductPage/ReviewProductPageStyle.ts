@@ -103,5 +103,8 @@ export const ReviewProductPageStyle = styled.div`
       margin-bottom: 10px;
     }
   }
-  
+
+  input {
+    min-width: 100%;
+  }
 `

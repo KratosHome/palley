@@ -45,6 +45,12 @@ export const ProductServer = [
                 "name": "Valintin",
                 "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
                 "grade": 3
+            },
+            {
+                "id": 3,
+                "name": "Dima",
+                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
+                "grade": 5
             }
         ],
         "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
@@ -141,20 +147,7 @@ export const ProductServer = [
                 "count": 30
             }
         ],
-        "review": [
-            {
-                "id": 1,
-                "name": "Dubrav",
-                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
-                "grade": 5
-            },
-            {
-                "id": 2,
-                "name": "Valintin",
-                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
-                "grade": 3
-            }
-        ],
+        "review": [],
         "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
         "product_details": ["You show me what is deep as sea", "Crew neck", "Short sleeves", "Large logo print to chest", "Regular fit", "True size"],
         "size_fit": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
@@ -195,20 +188,7 @@ export const ProductServer = [
                 "count": 30
             }
         ],
-        "review": [
-            {
-                "id": 1,
-                "name": "Dubrav",
-                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
-                "grade": 5
-            },
-            {
-                "id": 2,
-                "name": "Valintin",
-                "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
-                "grade": 3
-            }
-        ],
+        "review": [],
         "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
         "product_details": ["You show me what is deep as sea", "Crew neck", "Short sleeves", "Large logo print to chest", "Regular fit", "True size"],
         "size_fit": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
@@ -260,7 +240,7 @@ export const ProductServer = [
                 "id": 2,
                 "name": "Valintin",
                 "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
-                "grade": 3
+                "grade": 4
             }
         ],
         "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
