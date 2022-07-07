@@ -15,7 +15,6 @@ import {FaTwitter} from "react-icons/fa";
 import {FaFacebookSquare} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
 import BestSeler from "../../mainComponent/BestSeler/BestSeler";
-import {bestSelerServer} from "../../../API/TestServer/bestSelerServer";
 import {hotDealServer} from "../../../API/TestServer/hotDellServer";
 
 const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
