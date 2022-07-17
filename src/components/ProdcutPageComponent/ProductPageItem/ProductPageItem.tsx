@@ -2,7 +2,6 @@ import {ProductPageItemType} from "./ProductPageItemType";
 import {ProductPageItemStyle} from "./ProductPageItemSryle";
 import ProductImg from "../ProductImg/ProductImg";
 import ProductTitle from "../ProductTitle/ProductTitle";
-import BreadcrumbsComp from "../../BreadcrumbsComp/BreadcrumbsComp";
 import BuyBarProductPage from "../BuyBarProductPage/BuyBarProductPage";
 import {SizeGuideMoadalProductPage} from "../SizeGuideMoadalProductPage/SizeGuideMoadalProductPage";
 import {DeliveryReturnProductPage} from "../DeliveryReturnProductPage/DeliveryReturnProductPage";
@@ -16,6 +15,7 @@ import {FaFacebookSquare} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
 import BestSeler from "../../mainComponent/BestSeler/BestSeler";
 import {hotDealServer} from "../../../API/TestServer/hotDellServer";
+import { BreadcrumbsComp } from "../../BreadcrumbsComp";
 
 const ProductPageItem: React.FC<ProductPageItemType> = ({item}) => {
     return (

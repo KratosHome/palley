@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import BreadcrumbsComp from "../../components/BreadcrumbsComp/BreadcrumbsComp";
 import MayInput from "../../components/UL/MayInput/MayInput";
 import {useForm} from "react-hook-form";
 import {FormValues} from "../../components/FooterComponent/FooterBlock1/FooterBlock1Type";
@@ -10,6 +9,7 @@ import MayButtonForm from "../../components/UL/MayButtonForm/MayButtonForm";
 import {emailRegularExpressions, nameRegularExpressions} from "../../components/regularExpression/regularExpression";
 import MayModal from "../../components/UL/MayModal/MayModal";
 import {useNavigate} from 'react-router-dom';
+import { BreadcrumbsComp } from '../../components';
 
 
 const CheckoutPage = () => {

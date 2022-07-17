@@ -3,9 +3,9 @@ import React, {useState} from "react";
 import cart from "../../../img/icons/cart.png";
 import {CSSTransition} from 'react-transition-group';
 import "./HeaderCard.css"
-import MayButton from "../../UL/MayButton/MayButton";
-import {useAppSelector} from "../../../hooks/useRedux";
-import HeaderCartAdd from "../HeaderCartAdd/HeaderCartAdd";
+import {useAppSelector} from "../../../hooks/";
+import {HeaderCartAdd} from "../HeaderCartAdd";
+import {MayButton} from "../../UL";
 
 
 export const HeaderCard = () => {
@@ -71,11 +71,3 @@ export const HeaderCard = () => {
         </HeaderCardStyle>
     )
 };
-
-/*
-
-
-
-
-
- */

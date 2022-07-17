@@ -3,11 +3,10 @@ import logo from "../../img/icons/logo.png";
 import search from "../../img/icons/search.png";
 import like from "../../img/icons/like.png";
 import {HeaderStyles} from "./HeaderStyle";
-import {HeaderMenu} from "./HeaderMenu/HeaderMenu";
+import {HeaderMenu} from "./HeaderMenu";
 import {Link} from "react-router-dom";
-import {HeaderCard} from "./HeaderCard/HeaderCard";
+import {HeaderCard} from "./HeaderCard";
 import InputCabinet from "./InputCabinet/InputCabinet";
-
 
 export const Header = () => {
     return (

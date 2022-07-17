@@ -3,8 +3,8 @@ import {memo, useState} from "react";
 import MayButtonForm from "../../UL/MayButtonForm/MayButtonForm";
 import {useAppDispatch, useAppSelector} from "../../../hooks/useRedux";
 import {getProductInCard} from "../../../store/reducer/getProductInCard";
-import MayButton from "../../UL/MayButton/MayButton";
 import Quantity from "../../UL/Quantity/Quantity";
+import { MayButton } from "../../UL";
 
 
 type versionProductType = {

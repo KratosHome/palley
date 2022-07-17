@@ -5,8 +5,6 @@ import {FootetBlock1Style} from "./FooterBlock1Style";
 import MayInput from "../../UL/MayInput/MayInput";
 import {useEffect, useState} from "react";
 
-
-
 export const FooterBlock1 = () => {
 
     const {
@@ -70,7 +68,6 @@ export const FooterBlock1 = () => {
                 </button>
                 {show ? <div className="sent">sent...</div> : null}
             </form>
-
         </FootetBlock1Style>
     )
 };

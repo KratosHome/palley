@@ -1,7 +1,7 @@
 import {InfoBlokMainStyle} from "./InfoBlokMainStyle";
 import {InfoBlokMainType} from "./InfoBlokMainType";
-import MayButton from "../../UL/MayButton/MayButton";
 import React, {memo} from "react";
+import { MayButton } from "../../UL";
 
 const InfoBlokMain: React.FC<InfoBlokMainType> = ({
                                                       img,

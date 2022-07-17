@@ -1,5 +1,5 @@
 import React, {memo} from 'react';
-import MayButton from '../../UL/MayButton/MayButton';
+import { MayButton } from '../../UL';
 import {BuyItNowProductPageStyle} from "./BuyItNowProductPageStyle";
 
 

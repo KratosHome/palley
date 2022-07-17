@@ -10,6 +10,7 @@ import {hotDealServer} from "../../API/TestServer/hotDellServer";
 import {BloagMain} from "../../components/mainComponent/blogMain/BlogMain";
 
 export const Main = () => {
+
     return (
         <div className="containerMain">
             <BanerMain/>

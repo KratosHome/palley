@@ -1,11 +1,10 @@
 import React from 'react';
 import {ViewCartPageStyle} from "./ViewCartPageStyle";
-import BreadcrumbsComp from "../../components/BreadcrumbsComp/BreadcrumbsComp";
 import {useAppDispatch, useAppSelector} from "../../hooks/useRedux";
 import {deleteProduct} from "../../store/reducer/getProductInCard";
 import QuantityTest from '../../components/UL/QuantityTest/QuantityTest';
 import imgDel from "../../img/icons/delete.png";
-import MayButton from "../../components/UL/MayButton/MayButton";
+import { BreadcrumbsComp, MayButton } from '../../components';
 
 const ViewCartPage = () => {
 

@@ -3,7 +3,7 @@ import useBreadcrumbs from 'use-react-router-breadcrumbs';
 import {BreadcrumbsCompStyle} from "./BreadcrumbsCompStyle";
 import {memo} from "react";
 
-const BreadcrumbsComp = () => {
+export const BreadcrumbsComp = memo(() => {
     const breadcrumbs = useBreadcrumbs();
     return (
         <BreadcrumbsCompStyle>
@@ -14,6 +14,4 @@ const BreadcrumbsComp = () => {
             )}
         </BreadcrumbsCompStyle>
     );
-};
-
-export default memo(BreadcrumbsComp);
+});

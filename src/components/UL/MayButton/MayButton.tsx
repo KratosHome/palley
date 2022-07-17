@@ -1,10 +1,10 @@
 import {MayButtonType} from "./MayButtonType";
 import {MayButtonStyle} from "./MayButtonStyle";
 import {Link} from "react-router-dom";
-import {memo} from "react";
+import {FC, memo} from "react";
 
 
-const MayButton: React.FC<MayButtonType> = ({children, onClick, backgroundColor, colorText, linkTo}) => {
+export const MayButton: FC<MayButtonType> = memo(({children, onClick, backgroundColor, colorText, linkTo}) => {
     return (
         <MayButtonStyle
             onClick={onClick}
@@ -14,5 +14,4 @@ const MayButton: React.FC<MayButtonType> = ({children, onClick, backgroundColor,
             <Link to={linkTo}>{children}</Link>
         </MayButtonStyle>
     )
-};
-export default memo(MayButton);
+});

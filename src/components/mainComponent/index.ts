@@ -1,0 +1,6 @@
+export * from "./BanerManin"
+export * from "./BestSeler"
+export * from "./blogMain"
+export * from "./collectionFirst"
+export * from "./InfoBlokMain"
+export * from "./TestimonialsHome"

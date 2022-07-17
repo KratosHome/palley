@@ -1,5 +1,5 @@
 import {BlogMainStyle} from "./BlogMainSryle";
-import BlogListItem from "../../blogListItem/BlogListItem";
+import {BlogListItem} from "../../blogListItem/BlogListItem";
 import {blogMainServer} from "../../../API/TestServer/blogMainServer";
 
 export const BloagMain = () => {

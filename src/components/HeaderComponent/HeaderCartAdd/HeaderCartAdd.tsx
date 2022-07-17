@@ -1,12 +1,12 @@
-import React, {memo} from 'react';
+import React, {memo, FC} from 'react';
 import {HeaderAddType} from "./HeaderCardType";
 import {HeaderAddStyle} from "./HeaferCartAddStyle";
 import imgDel from "../../../img/icons/delete.png"
-import {useAppDispatch} from "../../../hooks/useRedux";
-import {deleteProduct} from '../../../store/reducer/getProductInCard';
+import {useAppDispatch} from "../../../hooks";
+import {deleteProduct} from '../../../store';
 import {NavLink} from "react-router-dom";
 
-const HeaderCartAdd: React.FC<HeaderAddType> = ({productAdd, setCardActive}) => {
+export const HeaderCartAdd: FC<HeaderAddType> = memo(({productAdd, setCardActive}) => {
     const dispatch = useAppDispatch()
     const onClock = (e: React.MouseEvent<HTMLDivElement>, item: any) => {
         e.preventDefault();
@@ -15,6 +15,7 @@ const HeaderCartAdd: React.FC<HeaderAddType> = ({productAdd, setCardActive}) => 
 
     let totalOld = productAdd.reduce((accumulator: any, friend: any) => accumulator + friend.prise * friend.count, 0)
     let total = productAdd.reduce((accumulator: any, friend: any) => accumulator + friend.newPrise * friend.count, 0)
+
 
 
     return (
@@ -68,6 +69,4 @@ const HeaderCartAdd: React.FC<HeaderAddType> = ({productAdd, setCardActive}) => 
             </div>
         </HeaderAddStyle>
     );
-};
-
-export default memo(HeaderCartAdd);
+});

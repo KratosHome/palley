@@ -1,0 +1,7 @@
+export * from "./AboutUs"
+export * from "./CheckoutPage"
+export * from "./Main"
+export * from "./NotFound"
+export * from "./ProductCatalogPage"
+export * from "./ProductPage"
+export * from "./ViewCartPage"

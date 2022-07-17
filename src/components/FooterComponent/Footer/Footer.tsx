@@ -1,9 +1,7 @@
 import visa from "../../../img/icons/pay_copyright.png";
 import {Link} from "react-router-dom";
 import {FootetStyle} from "./FooterStyle";
-
 import {FooterBlock1} from "../FooterBlock1/FooterBlock1";
-
 
 export const Footer = () => {
     return (
